@@ -4,7 +4,7 @@
 body {
     font-family: 'Press Start 2P', cursive;
     background-color: #371853;
-    background-image: url('background.png');
+    background-image: url('../../../linkfree-generator/Templates/Arcade/background.png');
 }
 
 a {cursor: crosshair;}
@@ -32,7 +32,21 @@ a {cursor: crosshair;}
         color: rgba(255,202,8,1);
     }
 }
-
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+  }
+  
+ .container p {
+    cursor: crosshair;
+    position: relative;
+    display: inline;
+  background: linear-gradient(180deg, rgba(254,13,241,1), rgba(255,202,8,1) 0% 100%);
+    margin: 5px; 
+  }
+  
 #links{
     max-width: 675px;
     width: auto;

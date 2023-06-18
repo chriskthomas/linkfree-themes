@@ -45,7 +45,26 @@ body {
     text-decoration: none;
     text-shadow: 3px 3px 0 var(--accentColor), 1px 1px 0 var(--accentColor), 2px 2px 0 var(--accentColor);
 }
+.container {
+	text-align: center;
+  }
 
+.container p {
+    display: inline-block;
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 20px;
+	margin-left:3%;
+	margin-right:3%;
+    padding: 10px;
+    text-decoration: underline;
+    font-size: 1.3rem;
+    transition: all .25s cubic-bezier(.08,.59,.29,.99);
+    border: solid var(--accentColor) 2px;
+    border-radius: 15px;
+}
 #links {
     max-width: 675px;
     width: auto;

@@ -66,3 +66,20 @@ body{
     color: var(--fontColor);
     text-shadow:var(--fontColor) 2px 2px 8px;
 }
+.container {
+	text-align: center;
+  }
+  p {
+    display: inline-block;
+    background-color: var(--accentColor);
+    color: var(--fontColor);
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 8px;
+    text-decoration: none;
+    text-shadow:var(--detailColor) 2px 2px 8px;
+    font-size: 1.3rem;
+    transition: all .25s cubic-bezier(.08,.59,.29,.99);
+    border: solid var(--fontColor) 2px;
+}

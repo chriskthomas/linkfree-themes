@@ -22,7 +22,26 @@ body{
     border-style: dotted;
     border-color: var(--accentColor)
 }
+.container {
+	text-align: center;
+  }
+  p {
 
+    display: inline-block;
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all .25s cubic-bezier(.08,.59,.29,.99);
+    border-color: var(--complementColor);
+    border: 2px;
+    border-style: dotted;
+    border-radius: 10px;
+}
 #userName{
     color: var(--accentColor);
     font-size: 1rem;

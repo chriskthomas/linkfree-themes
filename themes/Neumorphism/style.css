@@ -5,9 +5,6 @@
   --inner-shadow: inset 2px 2px 10px #999999, inset -2px -2px 10px #ffffff;
 }
 
-* {
-  box-sizing: border-box;
-}
 
 body {
   align-items: center;
@@ -22,17 +19,7 @@ body {
   padding-block: clamp(2rem, 10vw, 4rem);
 }
 
-.container {
-  align-items: center;
-  border-radius: 10px;
-  box-shadow: var(--shadow);
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  max-width: 672px;
-  padding: clamp(1em, 5vw, 2em);
-  width: 90%;
-}
+
 
 header {
   align-items: center;
@@ -53,7 +40,7 @@ a {
   text-decoration: none;
 }
 
-.picture {
+#userPhoto {
   border-radius: 50%;
   box-shadow: var(--inner-shadow);
   height: 8em;
@@ -61,12 +48,21 @@ a {
   width: 8em;
 }
 
-.picture:hover, .picture:focus {
+#userPhoto:hover, .picture:focus {
   box-shadow: var(--shadow);
   outline: none;
 }
-
-.picture::before {
+.container {
+	text-align: center;
+  }
+  p {
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    min-width: 20ch;
+    padding: 0.5em 1em;
+    text-align: center;
+}
+#userPhoto::before {
   content: "";
   background: url("homer.jpg");
   background-size: contain;

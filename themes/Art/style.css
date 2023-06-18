@@ -29,7 +29,7 @@ body {
   animation: gradient 10s ease infinite;
 }
 
-.profile-pic {
+#userPhoto{
   width: 6em;
   height: 6em;
   object-fit: cover;
@@ -38,7 +38,7 @@ body {
   box-shadow: var(--normal-shadow);
 }
 
-.username {
+#userName {
   font-size: 3rem;
   text-decoration: none;
   margin: 0.5em 0em 1em 0em;
@@ -47,14 +47,21 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.links {
+.link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3em;
+  gap: 2em;
+  margin: 0.7em;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
 }
 
-.link-items {
+.container p {
   background: coral;
   padding: 0.5em;
   font-size: 1.7rem;
@@ -63,6 +70,27 @@ body {
   border-radius: 10px;
   text-align: center;
   width: 20em;
+  font-weight: 600;
+  margin-top: -2rem;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  box-shadow: var(--normal-shadow);
+  animation: gradient 5s ease infinite reverse;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link{
+  background: coral;
+  padding: 0.5em;
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  width: 15em;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   box-shadow: var(--normal-shadow);
@@ -76,12 +104,12 @@ body {
   font-weight: bold;
 }
 
-.link-items:hover {
+.link{
   transform: scale(1.1);
 }
 
 @media screen and (max-width: 700px) {
-  .link-items {
+  .link {
     width: 10em;
   }
   .links {

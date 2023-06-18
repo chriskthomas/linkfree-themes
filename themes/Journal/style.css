@@ -33,7 +33,25 @@ body{
     text-decoration: none;
     font-style: italic;
 }
+.container {
+	text-align: center;
+  }
 
+.container p {
+    display: block;
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 1rem;
+    transition: all .25s cubic-bezier(.08,.59,.29,.99);
+    border: solid var(--accentColor) 2px;
+    border-radius: 10px;
+}
 #links{
     max-width: 675px;
     width: 100%;

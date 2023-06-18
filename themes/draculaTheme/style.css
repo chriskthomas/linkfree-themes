@@ -2,31 +2,31 @@
 
 :root {
     --font: 'Fira Sans', sans-serif;
-    
+
     --background: #282a36;
-    --selection:#44475a;
-    --comment:#6272a4;
-    --purple:#bd93f9;
-    --white:#f8f8f2;
-    --pink:#ff79c6;
+    --selection: #44475a;
+    --comment: #6272a4;
+    --purple: #bd93f9;
+    --white: #f8f8f2;
+    --pink: #ff79c6;
 }
 
-body{
+body {
     background-color: var(--background);
     color: var(--white);
 }
 
-footer{
+footer {
     text-align: center;
 
-    color:var(--comment);
+    color: var(--comment);
 
     font-family: var(--font);
     font-size: 0.75rem;
     font-weight: 400;
 }
 
-#userPhoto{
+#userPhoto {
     width: 96px;
     height: 96px;
 
@@ -38,7 +38,7 @@ footer{
     border: solid var(--purple) 2px;
 }
 
-#userName{
+#userName {
     width: 100%;
 
     color: var(--pink);
@@ -54,7 +54,13 @@ footer{
     display: block;
 }
 
-#links{
+.container p {
+    font-weight: 600;
+    font-family: 'karla';
+    color: #E6E6E6;
+}
+
+#links {
     max-width: 675px;
     width: auto;
 
@@ -62,13 +68,14 @@ footer{
 
     margin: 27px auto;
 }
-.link{
+
+.link {
     display: block;
     margin-bottom: 20px;
     padding: 17px;
 
     background-color: var(--background);
-    color:var(--comment);
+    color: var(--comment);
 
     font-family: var(--font);
     font-size: 1rem;
@@ -79,12 +86,35 @@ footer{
 
     text-align: center;
     text-decoration: none;
-    
-    transition: all .25s cubic-bezier(.08,.59,.29,.99);
-    
+
+    transition: all .25s cubic-bezier(.08, .59, .29, .99);
+
 }
 
-.link:hover{
+.container {
+    text-align: center;
+}
+
+p {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: var(--background);
+    color: var(--pink);
+
+    font-family: var(--font);
+    font-size: 1rem;
+    border-radius: 20px;
+    border: solid var(--purple) 1px;
+    text-decoration: underline dotted;
+
+    transition: all .25s cubic-bezier(.08, .59, .29, .99);
+    box-shadow: 3px 1px #007569;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.link:hover {
     background-color: var(--selection);
     color: var(--purple);
 }

@@ -35,7 +35,7 @@ body {
     padding: 15px;
     display: block;
 }
-.userName {
+#userName {
     display: grid;
     text-decoration: none;
     color: var(--bgColor);
@@ -44,7 +44,7 @@ body {
     font-family: var(--font);
     font-size: 20px;
 }
-.userPhoto {
+#userPhoto {
     margin: auto;
     background-color: royalblue;
     width: 110px;
@@ -55,6 +55,30 @@ body {
     border: black;
     margin: auto;
     
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+  }
+  
+ p {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: var(--font);
+    margin: auto;
+    color: var(--bgColor);
+    background-color: var(--accentColor);
+    margin-bottom: 20px;
+    transition: all .25s cubic-bezier(.08, .59, .29, .99);
+    box-sizing: border-box;
+    border-radius: 1px;
+    padding: 15px;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
+    border: solid var(--grad) 20px;
 }
 @media only screen and (min-width:600px) {
     body {
@@ -67,11 +91,13 @@ body {
     .links {
         max-width: 675px;
         width: auto;
-        display: block;
+        display: inline-block;
         margin:30px auto;
     }
 }
 .link {
+    justify-content: center;
+    align-items: center;
     display: grid;
     text-decoration: none;
     font-size: 1.7em;
@@ -84,6 +110,7 @@ body {
     box-sizing: border-box;
     border-radius: 25px;
     padding: 15px;
+    align-items: center;
     grid-template-columns: auto auto;
     grid-gap: 15px;
     border: solid var(--grad) 20px;

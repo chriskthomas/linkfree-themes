@@ -38,19 +38,19 @@ body {
     width: 100%;
 }
 
-.author {
+#userPhoto {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.author .author__pic {
+#userPhoto{
     border-radius: 50%;
     object-fit: cover;
     overflow: hidden;
     width: 120px;
     height: 120px;
 }
-.author .author__username {
+#userName{
     color: #ffffff;
     margin-top: 20px;
     text-decoration: none;
@@ -62,7 +62,7 @@ body {
     gap: 10px;
     margin-top: 20px;
 }
-.links .links__item {
+.links {
     align-items: center;
     background-color: #ffffff;
     border-radius: 18px;
@@ -75,7 +75,7 @@ body {
     text-decoration: none;
     width: 280px;
 }
-.links .links__item .links__icon {
+.links  {
     background-color: #302387;
     border-radius: 50%;
     height: 32px;
@@ -83,11 +83,11 @@ body {
     display: flex;
     align-items: center;
 }
-.links .links__item .links__icon i {
+.links {
     color: #ffffff;
     font-size: 24px;
     margin: 0 auto;
 }
-.links .links__item .links__label {
+.links  {
     margin-left: 12px;
 }

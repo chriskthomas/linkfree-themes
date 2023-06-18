@@ -20,7 +20,11 @@ body {
     margin: 35px auto 20px;
     border-radius: 50%;
 }
-
+.container p {
+    font-weight: 600;
+    font-family: 'Karla';
+    color: #E6E6E6;
+}
 #userName {
     color: rgb(255, 255, 255);
     font-size: 1rem;
@@ -39,7 +43,21 @@ body {
     display: block;
     margin: 27px auto;
 }
-
+.container {
+	text-align: center;
+  }
+  p {
+    display: inline-block;
+    color: var(--accentColor);
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-decoration: underline dotted;
+    font-size: 1.1rem;
+    transition: all .25s cubic-bezier(.08, .59, .29, .99);
+    border: solid var(--accentColor) 2px;
+}
 .link {
     display: block;
     background-color: var(--accentColor);

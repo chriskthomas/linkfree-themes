@@ -4,31 +4,37 @@ body {
   padding: 15px;
   background-image: url('https://cdnb.artstation.com/p/assets/images/images/024/538/827/original/pixel-jeff-clipa-s.gif');
 }
-.wrap {
-  width: 100%;
-  max-width: 320px;
-  margin: 0 auto;
+#userName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: wheat;
+  font-size: 15px;
+  background-color: black;
+  height: 50px; /* Adjust the height as needed */
+  margin: 0 auto; /* Add this line */
 }
-.profile {
+
+#userPhoto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+}
+
+.container {
+	text-align: center;
+  }
+  p {
+  padding: 14px;
+  display: inline-block;
+  background-color: #9466FF;
   text-align: center;
+  text-decoration: none;
+  border-radius: 1px;
+  transition: ease all 0.3s;
   color: #FFF;
-}
-.photo {
-  border-radius: 50%;
-}
-.profile_name {
-  font-weight: bold;
-  display: block;
-}
-.at {
-  font-size: 13px;
-}
-.links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.links ul li {
   margin: 14px 0;
 }
 .link {
@@ -40,6 +46,7 @@ body {
   border-radius: 4px;
   transition: ease all 0.3s;
   color: #FFF;
+  margin: 14px 0;
 }
 .link:hover {
   opacity: 0.9;

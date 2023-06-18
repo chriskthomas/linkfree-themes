@@ -86,7 +86,24 @@ footer a:hover {
 	transition: all 0.15s;
 	box-shadow: 4px 4px #086a55;
 }
-
+.container {
+	text-align: center;
+  }
+  p {
+    display: inline-block;
+	background-color: var(--green);
+	color: #fff;
+    cursor: pointer;
+	font-family: var(--font);
+	text-align: center;
+    text-shadow: 1px 1px var(--background);
+	margin-bottom: 1.2rem;
+	padding: 0.4rem;
+	text-decoration: underline dotted;
+	font-size: 1rem;
+	transition: all 0.15s;
+	box-shadow: 4px 4px #21ab8d;
+}
 .link:hover, .link:focus {
 	background: #09bf90;
 	box-shadow: 2px 2px #086a55;
