@@ -85,7 +85,29 @@ footer{
     transition: all .25s cubic-bezier(.08,.59,.29,.99);
     
 }
+.container {
+	text-align: center;
+  }
+  p {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 10px;
 
+    background-color: var(--background);
+    color:var(--comment);
+
+    font-family: var(--font);
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    border-radius: 5px;
+    border: solid var(--purple) 1px;
+
+    text-align: center;
+    text-decoration: underline double;
+    
+    transition: all .25s cubic-bezier(.08,.59,.29,.99);
+}
 .link:hover{
     border-color: var(--selection);
     color: var(--selection);

@@ -1,28 +1,15 @@
-body {
-  margin: 0;
-  padding: 0;
-}
 
-.background {
+
+body {
   background: linear-gradient(99.79deg, #0d0941 0.24%, #642a85 100.04%);
   min-height: 100vh;
   display: grid;
   place-items: center;
+  margin: 0;
 }
 
-.main-content {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(10px);
-  padding: 1.5em 4em;
-  border-radius: 20px;
-}
 
-.username {
+#userName {
   font-size: 2rem;
   color: white;
   text-decoration: none;
@@ -31,34 +18,59 @@ body {
   transition: all 0.5s;
 }
 
-.username:hover {
+#userName:hover {
   color: rgb(46, 3, 46);
   text-shadow: 0px 0px 10px white;
 }
-
-.profile-pic {
+.container {
+	text-align: center;
+  }
+  p {
+    display: flex;
+    gap: 0.2em;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding: 0.5em 3em;
+    border-radius: 30px;
+    background: linear-gradient(180deg, #520a80 0%, #160c31 100%);
+    font-weight: bold;
+    transform: perspective(1px) translateZ(0);
+    color: white;
+    text-shadow: 0 1px 0 #ff0e7e;
+    transition: all 0.4s;
+}
+#userPhoto {
   width: 7em;
   height: 7em;
   object-fit: cover;
   border-radius: 50%;
+  margin: 3px auto 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.profile-links-container {
+#links {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2em;
+  gap: 0.5em;
 }
 
-a::before {
+.link::before {
   content: "";
   position: absolute;
   z-index: -1;
   inset: 0;
 }
 
-.profile-link {
+.p {
+  color: antiquewhite;
+}
+.link {
   display: flex;
   gap: 0.2em;
   align-items: center;
@@ -75,7 +87,7 @@ a::before {
   transition: all 0.4s;
 }
 
-.profile-link::before {
+.link::before {
   background: #0d0941;
   clip-path: inset(0 0 0 100%);
   opacity: 1;
@@ -83,15 +95,7 @@ a::before {
   border-radius: 30px;
 }
 
-.profile-link:hover::before {
+.link:hover::before {
   clip-path: inset(0 0 0 0);
 }
 
-@media screen and (max-width: 700px) {
-  .main-content {
-    padding: 2em 2em;
-  }
-  .profile-link {
-    font-size: 1.4rem;
-  }
-}

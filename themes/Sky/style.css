@@ -7,7 +7,7 @@
 }
 
 body{
-    background:url('Blue_sky_with_white_clouds-1_generated.jpg');
+    background:url('../../../linkfree-generator/Templates/Sky/Blue_sky_with_white_clouds-1_generated.jpg');
     background-size: cover;
 }
 
@@ -51,7 +51,23 @@ body{
     transition: all .25s cubic-bezier(.08,.59,.29,.99);
     border: solid var(--accentColor) 2px;
 }
-
+.container {
+	text-align: center;
+  }
+  p {
+    border-radius: 15px;
+    display: inline-block;
+    background-color: var(--accentColor);
+    color: #1c1c1c;
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 17px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all .25s cubic-bezier(.08,.59,.29,.99);
+    border: solid var(--accentColor) 2px;
+}
 .link:hover{
     background-color: #5986e7;
     color: var(--accentColor);

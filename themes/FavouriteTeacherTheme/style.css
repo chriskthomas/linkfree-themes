@@ -37,6 +37,17 @@ body{
     text-decoration: none;
 }
 
+.container p {
+    color: var(--accentColor);
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-decoration: underline dotted;
+}
 #links{
     max-width: 675px;
     width: auto;
