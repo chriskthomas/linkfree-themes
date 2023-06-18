@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "CSS themes for a free and open source alternative to LinkTree",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "make-index": "node make-index.js"
   },
   "repository": {
     "type": "git",
