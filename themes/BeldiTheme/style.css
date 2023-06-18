@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&display=swap" rel="stylesheet');
+@import url('//fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&display=swap" rel="stylesheet');
 
 :root {
     --font: 'Fira Sans', sans-serif;
@@ -11,7 +11,7 @@
 }
 
 body{
-    background: var(--background) url(img/pem.jpg) repeat center bottom;
+    background: var(--background) url(images/background.jpg) repeat center bottom;
     background-size: contain;
     color: var(--cream);
     height: 100vh;

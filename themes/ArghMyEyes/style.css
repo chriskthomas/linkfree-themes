@@ -19,7 +19,7 @@
     75% { background-color: #00FAAC; }
     100% { background-color: #FFFDAF; }
 }
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('//fonts.googleapis.com/css2?family=Quicksand&display=swap');
 * {
     box-sizing: border-box;
 }

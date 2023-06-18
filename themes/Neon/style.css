@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("//fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@ body {
       rgba(29, 38, 113, 0.8),
       rgba(195, 55, 100, 0.8)
     ),
-    url("images/background-image.jpg");
+    url("images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Poppins", sans-serif;

@@ -1,5 +1,5 @@
 /* Style Settings */
-@import url('https://fonts.googleapis.com/css?family=Alice&display=swap');
+@import url('//fonts.googleapis.com/css?family=Alice&display=swap');
 :root {
     --bgColor:#130912;
     --accentColor: #3d1c33;
@@ -10,7 +10,7 @@
 
 body{
     background-color: #2401206e;
-    background-image: url("nmbc.jpg");
+    background-image: url("images/background.jpg");
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;

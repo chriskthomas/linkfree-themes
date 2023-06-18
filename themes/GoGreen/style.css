@@ -1,5 +1,5 @@
 /* Style Settings */
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+@import url('//fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 :root {
     --bgColor: rgb(255, 230, 184);
     --accentColor: #2fc24f;
@@ -7,7 +7,7 @@
 }
 
 body{
-    background: center bottom url(grass-dark-green-silhouette.svg) no-repeat;
+    background: center bottom url(images/background.svg) no-repeat;
     background-color: var(--bgColor);
     background-size: cover;
     min-height: 100vh;

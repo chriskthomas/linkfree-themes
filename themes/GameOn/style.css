@@ -1,8 +1,8 @@
 /* Style Settings */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('//fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
-    background: url('../../../../linkfree-generator/src/templates/GameOn/images/bg.png');
+    background: url('images/background.png');
     font-family: 'Press Start 2P', cursive;
     font-weight: 600;
 }

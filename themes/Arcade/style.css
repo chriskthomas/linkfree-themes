@@ -1,10 +1,10 @@
 /* Style Settings */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('//fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
     font-family: 'Press Start 2P', cursive;
     background-color: #371853;
-    background-image: url('../../../linkfree-generator/Templates/Arcade/background.png');
+    background-image: url('images/background.png');
 }
 
 a {cursor: crosshair;}

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&display=swap" rel="stylesheet');
+@import url('//fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&display=swap" rel="stylesheet');
 
 :root {
     --font: 'Fira Sans', sans-serif;
@@ -12,7 +12,7 @@
 }
 
 body{
-    background: var(--background) url(img/beatles-mmt.svg) no-repeat center bottom;
+    background: var(--background) url(images/background.svg) no-repeat center bottom;
     background-size: 80%;
     color: var(--white);
     height: 100vh;

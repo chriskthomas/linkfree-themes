@@ -1,5 +1,5 @@
 /* Style Settings */
-@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+@import url('//fonts.googleapis.com/css?family=Karla:400,700&display=swap');
 :root {
     --bgColor:#1C1C1C;
     --accentColor: #c5d0d3;
@@ -7,7 +7,7 @@
 }
 
 body{
-    background:url('../../../linkfree-generator/Templates/Sky/Blue_sky_with_white_clouds-1_generated.jpg');
+    background:url('images/background.jpg');
     background-size: cover;
 }
 

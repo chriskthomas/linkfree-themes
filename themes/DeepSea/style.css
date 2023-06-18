@@ -1,6 +1,6 @@
 /* Style Settings */
 
-@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+@import url('//fonts.googleapis.com/css?family=Karla:400,700&display=swap');
 :root {
     --bgColor: rgb(0, 0, 0);
     --accentColor: #E6E6E6;
@@ -9,7 +9,7 @@
 
 body {
     background-color: var(--bgColor);
-    background-image: url("./assets/deepSea.png");
+    background-image: url("images/background.png");
     background-size: 120%;
 }
 

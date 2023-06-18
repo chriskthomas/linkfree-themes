@@ -1,5 +1,5 @@
 /* Style Settings */
-@import url('https://fonts.googleapis.com/css?family=Modak&display=swap');
+@import url('//fonts.googleapis.com/css?family=Modak&display=swap');
 :root {
     --bgColor: white;
     --accentColor: #363534;
@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url('https://mk-website-media.s3.amazonaws.com/wp-content/uploads/2018/10/19001752/Wallpaper-IngridMika-ContactGrid55-1-1100x1318.jpg');
+  background-image: url('images/background.jpg');
   background-size: 20%;
 }
 
