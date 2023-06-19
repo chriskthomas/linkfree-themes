@@ -1,5 +1,5 @@
 {
-  "name": "linkfree-css",
+  "name": "linkfree-themes",
   "version": "0.0.1",
   "description": "CSS themes for a free and open source alternative to LinkTree",
   "main": "index.json",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chriskthomas/linkfree-css.git"
+    "url": "git+https://github.com/chriskthomas/linkfree-themes.git"
   },
   "keywords": [
     "css",
@@ -18,7 +18,7 @@
   "author": "Chris K. Thomas",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/chriskthomas/linkfree-css/issues"
+    "url": "https://github.com/chriskthomas/linkfree-themes/issues"
   },
-  "homepage": "https://github.com/chriskthomas/linkfree-css#readme"
+  "homepage": "https://github.com/chriskthomas/linkfree-themes#readme"
 }
