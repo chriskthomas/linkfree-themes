@@ -129,15 +129,7 @@ p {
   =============================================================================
 */
 :root {
-  --png: url("");
-  --gif: url("https://media1.giphy.com/media/XfxvBgWGIlk6STgMEn/source.gif");
-}
-.cat {
-  width: 100px; /*width of your image*/
-  height: 100px; /*height of your image*/
-  content: url("./cat.png");
-  margin: 0; /* If you want no margin */
-  padding: 0; /*if your want to padding */
+  --gif: url("images/heart.gif");
 }
 
 .rainbowcat-left {
