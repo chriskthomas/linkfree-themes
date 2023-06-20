@@ -75,15 +75,15 @@ p {
   box-shadow: var(--shadow);
   min-width: 20ch;
   padding: 0.5em 1em;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 0.5em;
+  justify-content: center;
 }
 
 .link:hover,
 .link:focus {
   box-shadow: var(--inner-shadow);
   outline: none;
-}
-
-.link i {
-  vertical-align: -13%;
 }
