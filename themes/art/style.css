@@ -29,7 +29,7 @@ body {
   animation: gradient 10s ease infinite;
 }
 
-#userPhoto{
+#userPhoto {
   width: 6em;
   height: 6em;
   object-fit: cover;
@@ -54,14 +54,8 @@ body {
   gap: 2em;
   margin: 0.7em;
 }
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10vh;
-}
 
-.container p {
+p {
   background: coral;
   padding: 0.5em;
   font-size: 1.7rem;
@@ -82,7 +76,7 @@ body {
   align-items: center;
 }
 
-.link{
+.link {
   background: coral;
   padding: 0.5em;
   font-size: 1.7rem;
@@ -104,7 +98,7 @@ body {
   font-weight: bold;
 }
 
-.link{
+.link {
   transform: scale(1.1);
 }
 
