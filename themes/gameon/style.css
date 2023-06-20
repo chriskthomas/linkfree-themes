@@ -1,81 +1,76 @@
 /* Style Settings */
-@import url('//fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("//fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 body {
-    background: url('images/background.png');
-    font-family: 'Press Start 2P', cursive;
-    font-weight: 600;
+  background: url("images/background.png");
+  font-family: "Press Start 2P", cursive;
+  font-weight: 600;
+  text-align: center;
 }
 
 #userPhoto {
-    width: 150px;
-    height: 150px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 20%;
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 20%;
+}
+
+#userName,
+#description {
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
 }
 
 #userName {
-    color: #fff;
-    display: block;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  margin: 0 auto;
 }
 
-#userName h1 {
-    font-size: 2rem;
-    font-weight: 300;
-    letter-spacing: 0.2rem;
-    margin: 0 auto;
-}
-
-#userName p {
-    font-weight: 300;
-    margin-top: 5px;
-    text-transform: none;
+#description {
+  text-transform: none;
 }
 
 #links {
-    max-width: 500px;
-    width: auto;
-    display: block;
-    margin: 20px auto;
+  max-width: 500px;
+  width: auto;
+  display: block;
+  margin: 20px auto;
 }
 
 .link {
-    display: block;
-    background-color: rgb(0 0 54);
-    color: #fff;
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 17px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 300;
-    transition: all .25s cubic-bezier(.08, .59, .29, .99);
-    border: 3px solid white;
-    border-radius: 5% 5% 37% 49% / 43% 52% 31% 48%;
+  display: block;
+  background-color: rgb(0 0 54);
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 17px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 300;
+  transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
+  border: 3px solid white;
+  border-radius: 5% 5% 37% 49% / 43% 52% 31% 48%;
+}
 
+p {
+  display: inline-block;
+  background-color: rgb(0 0 54);
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-decoration: underline dashed;
+  font-size: 1.3rem;
+  font-weight: 300;
+  transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
+  border: 1px solid white;
+  border-radius: 5% 5% 30% 40% / 43% 52% 31% 48%;
 }
-.container {
-	text-align: center;
-  }
-  p {
-    display: inline-block;
-    background-color: rgb(0 0 54);
-    color: #fff;
-    text-align: center;
-    margin-bottom: 10px;
-    padding: 10px;
-    text-decoration: underline dashed;
-    font-size: 1.3rem;
-    font-weight: 300;
-    transition: all .25s cubic-bezier(.08, .59, .29, .99);
-    border: 1px solid white;
-    border-radius: 5% 5% 30% 40% / 43% 52% 31% 48%;
-}
+
 .link:hover {
-    background-color: rgb(221 48 119);
-    color: #000000;
+  background-color: rgb(221 48 119);
+  color: #000000;
 }
