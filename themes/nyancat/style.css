@@ -1,6 +1,5 @@
 /* Style Settings */
 @import url("//fonts.googleapis.com/css?family=Karla:400,700&display=swap");
-
 :root {
   --bgColor: #f4eed4;
   --accentColor: #e03a3e;
@@ -41,10 +40,6 @@ body {
   width: auto;
   display: block;
   margin: 27px auto;
-}
-
-.container {
-  text-align: center;
 }
 
 p {

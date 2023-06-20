@@ -13,6 +13,7 @@
     0px 6.6501px 9.64265px rgba(0, 0, 0, 0.100973),
     0px 2.76726px 4.01252px rgba(0, 0, 0, 0.0702864);
 }
+
 html,
 body {
   width: 100%;
@@ -96,9 +97,6 @@ p {
   gap: 0.2em;
   font-family: "Exo 2", sans-serif;
   font-weight: bold;
-}
-
-.link {
   transform: scale(1.1);
 }
 

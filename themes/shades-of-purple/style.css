@@ -1,5 +1,3 @@
-
-
 body {
   background: linear-gradient(99.79deg, #0d0941 0.24%, #642a85 100.04%);
   min-height: 100vh;
@@ -7,7 +5,6 @@ body {
   place-items: center;
   margin: 0;
 }
-
 
 #userName {
   font-size: 2rem;
@@ -22,25 +19,25 @@ body {
   color: rgb(46, 3, 46);
   text-shadow: 0px 0px 10px white;
 }
-.container {
-	text-align: center;
-  }
-  p {
-    display: flex;
-    gap: 0.2em;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.8rem;
-    text-decoration: none;
-    padding: 0.5em 3em;
-    border-radius: 30px;
-    background: linear-gradient(180deg, #520a80 0%, #160c31 100%);
-    font-weight: bold;
-    transform: perspective(1px) translateZ(0);
-    color: white;
-    text-shadow: 0 1px 0 #ff0e7e;
-    transition: all 0.4s;
+
+p {
+  display: flex;
+  gap: 0.2em;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  text-decoration: none;
+  padding: 0.5em 3em;
+  border-radius: 30px;
+  background: linear-gradient(180deg, #520a80 0%, #160c31 100%);
+  font-weight: bold;
+  transform: perspective(1px) translateZ(0);
+  color: white;
+  text-shadow: 0 1px 0 #ff0e7e;
+  transition: all 0.4s;
+  text-align: center;
 }
+
 #userPhoto {
   width: 7em;
   height: 7em;
@@ -67,9 +64,6 @@ body {
   inset: 0;
 }
 
-.p {
-  color: antiquewhite;
-}
 .link {
   display: flex;
   gap: 0.2em;
@@ -98,4 +92,3 @@ body {
 .link:hover::before {
   clip-path: inset(0 0 0 0);
 }
-

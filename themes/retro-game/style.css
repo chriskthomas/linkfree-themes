@@ -2,8 +2,10 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 15px;
-  background-image: url('images/background.gif');
+  background-image: url("images/background.gif");
+  text-align: center;
 }
+
 #userName {
   display: flex;
   justify-content: center;
@@ -23,46 +25,31 @@ body {
   height: 200px;
 }
 
-.container {
-	text-align: center;
-  }
-  p {
+p {
   padding: 14px;
   display: inline-block;
-  background-color: #9466FF;
+  background-color: #9466ff;
   text-align: center;
   text-decoration: none;
   border-radius: 1px;
   transition: ease all 0.3s;
-  color: #FFF;
+  color: #fff;
   margin: 14px 0;
 }
+
 .link {
   padding: 14px;
   display: block;
-  background-color: #9466FF;
+  background-color: #9466ff;
   text-align: center;
   text-decoration: none;
   border-radius: 4px;
   transition: ease all 0.3s;
-  color: #FFF;
+  color: #fff;
   margin: 14px 0;
 }
+
 .link:hover {
   opacity: 0.9;
   background-color: #170fff;
-}
-.card {
-  padding: 10px;
-  background-color: #FFF;
-  border-radius: 4px;
-}
-.card h3 {
-  margin: 0;
-  color: #202024;
-}
-.card p {
-  margin: 5px 0;
-  font-size: 13px;
-  color: #202024;
 }

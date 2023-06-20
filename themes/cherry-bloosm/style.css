@@ -1,129 +1,482 @@
-@import url('//fonts.googleapis.com/css?family=Fredoka+One');
-
+@import url("//fonts.googleapis.com/css?family=Fredoka+One");
 :root {
-    --font:'Fredoka one', sans-serif;
-    --bgColor: rgb(0,0,0);
-    --accentColor: hsl(0, 100%, 81%);
-    --largeDeviceBg: url("https://images.unsplash.com/photo-1598063183638-4ffe7c5f0f8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80");
-    --smallDeviceBg: url("https://png.pngtree.com/thumb_back/fw800/background/20210401/pngtree-peach-blossom-pink-mobile-phone-wallpaper-image_602515.jpg");
-    --grad:linear-gradient(rgb(10, 10, 10), rgb(53, 41, 46), rgb(162, 118, 131), rgb(205, 155, 164), rgb(250, 195, 197));
+  --font: "Fredoka one", sans-serif;
+  --bgColor: rgb(0, 0, 0);
+  --accentColor: hsl(0, 100%, 81%);
+  --largeDeviceBg: url("https://images.unsplash.com/photo-1598063183638-4ffe7c5f0f8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80");
+  --smallDeviceBg: url("https://png.pngtree.com/thumb_back/fw800/background/20210401/pngtree-peach-blossom-pink-mobile-phone-wallpaper-image_602515.jpg");
+  --grad: linear-gradient(
+    rgb(10, 10, 10),
+    rgb(53, 41, 46),
+    rgb(162, 118, 131),
+    rgb(205, 155, 164),
+    rgb(250, 195, 197)
+  );
 }
+
 .shadow {
-   -moz-box-shadow:    inset 0 0 10px #000000;
-   -webkit-box-shadow: inset 0 0 10px #000000;
-   box-shadow:         inset 0 0 10px #000000;
+  -moz-box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
 }
+
 .links {
+  max-width: 675px;
+  width: auto;
+  display: block;
+  margin: 30px auto;
+}
+
+body {
+  color: var(--bgColor);
+  background-color: royalblue;
+  background-image: var(--smallDeviceBg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+#userName {
+  display: grid;
+  text-decoration: none;
+  color: var(--bgColor);
+  margin: auto;
+  text-align: center;
+  font-family: var(--font);
+  font-size: 20px;
+}
+
+#userPhoto {
+  margin: auto;
+  background-color: royalblue;
+  width: 110px;
+  height: 110px;
+  display: grid;
+  border-radius: 50%;
+  outline-color: black;
+  border: black;
+  margin: auto;
+}
+
+p {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: var(--font);
+  margin: auto;
+  color: var(--bgColor);
+  background-color: var(--accentColor);
+  margin-bottom: 20px;
+  transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
+  box-sizing: border-box;
+  border-radius: 1px;
+  padding: 15px;
+  grid-template-columns: auto auto;
+  grid-gap: 15px;
+  border: solid var(--grad) 20px;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: royalblue;
+    background-image: var(--largeDeviceBg);
+    background-size: cover;
+    box-sizing: border-box;
+    box-sizing: 100%;
+  }
+
+  .links {
     max-width: 675px;
     width: auto;
-    display: block;
-    margin:30px auto;
-}
-body {
-    color: var(--bgColor);
-    background-color: royalblue;
-    background-image: var(--smallDeviceBg);
-    background-repeat:no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-
-} 
-
-
-.container{
-    margin: auto;
-    padding: 15px;
-    display: block;
-}
-#userName {
-    display: grid;
-    text-decoration: none;
-    color: var(--bgColor);
-    margin: auto;
-    text-align: center;
-    font-family: var(--font);
-    font-size: 20px;
-}
-#userPhoto {
-    margin: auto;
-    background-color: royalblue;
-    width: 110px;
-    height:110px;
-    display: grid;
-    border-radius: 50%; 
-    outline-color: black;
-    border: black;
-    margin: auto;
-    
-}
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-  }
-  
- p {
     display: inline-block;
-    text-decoration: none;
-    font-size: 1.5em;
-    font-family: var(--font);
-    margin: auto;
-    color: var(--bgColor);
-    background-color: var(--accentColor);
-    margin-bottom: 20px;
-    transition: all .25s cubic-bezier(.08, .59, .29, .99);
-    box-sizing: border-box;
-    border-radius: 1px;
-    padding: 15px;
-    grid-template-columns: auto auto;
-    grid-gap: 15px;
-    border: solid var(--grad) 20px;
+    margin: 30px auto;
+  }
 }
-@media only screen and (min-width:600px) {
-    body {
-        background-color: royalblue;
-        background-image: var(--largeDeviceBg);
-        background-size: cover;
-        box-sizing: border-box;
-        box-sizing: 100%;
-    } 
-    .links {
-        max-width: 675px;
-        width: auto;
-        display: inline-block;
-        margin:30px auto;
-    }
-}
+
 .link {
-    justify-content: center;
-    align-items: center;
-    display: grid;
-    text-decoration: none;
-    font-size: 1.7em;
-    font-family: var(--font);
-    margin: auto;
-    color: var(--bgColor);
-    background-color: var(--accentColor);
-    margin-bottom: 20px;
-    transition: all .25s cubic-bezier(.08, .59, .29, .99);
-    box-sizing: border-box;
-    border-radius: 25px;
-    padding: 15px;
-    align-items: center;
-    grid-template-columns: auto auto;
-    grid-gap: 15px;
-    border: solid var(--grad) 20px;
-
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  text-decoration: none;
+  font-size: 1.7em;
+  font-family: var(--font);
+  margin: auto;
+  color: var(--bgColor);
+  background-color: var(--accentColor);
+  margin-bottom: 20px;
+  transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding: 15px;
+  align-items: center;
+  grid-template-columns: auto auto;
+  grid-gap: 15px;
+  border: solid var(--grad) 20px;
 }
 
-.link > img{
-    font-size: 25px;
+.link > img {
+  font-size: 25px;
 }
 
 .link:hover {
-    background-color: var(--bgColor);
-    color: var(--accentColor);
-    
+  background-color: var(--bgColor);
+  color: var(--accentColor);
 }
 
+/*
+  Animation
+  =============================================================================
+*/
+:root {
+  --png: url("");
+  --gif: url("https://media1.giphy.com/media/XfxvBgWGIlk6STgMEn/source.gif");
+}
+.cat {
+  width: 100px; /*width of your image*/
+  height: 100px; /*height of your image*/
+  content: url("./cat.png");
+  margin: 0; /* If you want no margin */
+  padding: 0; /*if your want to padding */
+}
+
+.rainbowcat-left {
+  position: absolute;
+  width: 75px; /*width of your image*/
+  height: 75px; /*height of your image*/
+  left: 70%;
+  content: var(--gif);
+  margin: 0; /* If you want no margin */
+  padding: 0; /*if your want to padding */
+}
+
+.rainbowcat-left-bottom {
+  position: absolute;
+  width: 75px; /*width of your image*/
+  height: 75px; /*height of your image*/
+  left: 70%;
+  top: 90%;
+  content: var(--gif);
+  margin: 0; /* If you want no margin */
+  padding: 0; /*if your want to padding */
+}
+
+.rainbowcat-right {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  right: 70%;
+  content: var(--gif);
+  margin: 0;
+  padding: 0;
+}
+
+.rainbowcat-right-bottom {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  right: 70%;
+  top: 90%;
+  content: var(--gif);
+  margin: 0;
+  padding: 0;
+}
+
+.rainbowcat-top {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 90%;
+  left: 40%;
+  right: 60%;
+  content: var(--gif);
+  margin: 0;
+  padding: 0;
+}
+
+.rainbowcat-bottom {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  bottom: 90%;
+  left: 30%;
+  right: 70%;
+  content: var(--gif);
+  margin: 0;
+  padding: 0;
+}
+
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: 5;
+  animation-direction: alternate;
+}
+
+.direction {
+  animation-name: direction;
+  animation-duration: 1s;
+  animation-iteration-count: 5;
+  animation-direction: alternate;
+}
+
+.roll-in-left {
+  -webkit-animation: roll-in-left 2s ease-out 5 both;
+  animation: roll-in-left 2s ease-out 5 both;
+}
+
+.roll-in-right {
+  -webkit-animation: roll-in-right 2s ease-out 5 both;
+  animation: roll-in-right 2s ease-out 5 both;
+}
+
+.roll-in-top {
+  -webkit-animation: roll-in-top 2s ease-out 5 both;
+  animation: roll-in-top 2s ease-out 5 both;
+}
+
+.roll-in-bottom {
+  -webkit-animation: roll-in-bottom 2s ease-out 5 both;
+  animation: roll-in-bottom 2s ease-out 5 both;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.75);
+    opacity: 0.25;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes direction {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.75);
+    opacity: 0.25;
+  }
+}
+@-webkit-keyframes roll-in-top {
+  0% {
+    -webkit-transform: translateY(-600px) rotate(-540deg);
+    transform: translateY(-600px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes roll-in-top {
+  0% {
+    -webkit-transform: translateY(-600px) rotate(-540deg);
+    transform: translateY(-600px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes roll-in-bottom {
+  0% {
+    -webkit-transform: translateY(600px) rotate(540deg);
+    transform: translateY(600px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes roll-in-bottom {
+  0% {
+    -webkit-transform: translateY(600px) rotate(540deg);
+    transform: translateY(600px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .rainbowcat-left {
+    position: absolute;
+    width: 100px; /*width of your image*/
+    height: 100px; /*height of your image*/
+    left: 90%;
+    content: var(--gif);
+    margin: 0; /* If you want no margin */
+    padding: 0; /*if your want to padding */
+  }
+
+  .rainbowcat-left-bottom {
+    position: absolute;
+    width: 100px; /*width of your image*/
+    height: 100px; /*height of your image*/
+    left: 90%;
+    top: 90%;
+    content: var(--gif);
+    margin: 0; /* If you want no margin */
+    padding: 0; /*if your want to padding */
+  }
+
+  .rainbowcat-right {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 90%;
+    content: var(--gif);
+    margin: 0;
+    padding: 0;
+  }
+
+  .rainbowcat-right-bottom {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 90%;
+    top: 90%;
+    content: var(--gif);
+    margin: 0;
+    padding: 0;
+  }
+
+  .rainbowcat-top {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 90%;
+    left: 50%;
+    right: 50%;
+    content: var(--gif);
+    margin: 0;
+    padding: 0;
+  }
+
+  .rainbowcat-bottom {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 90%;
+    left: 50%;
+    right: 50%;
+    content: var(--gif);
+    margin: 0;
+    padding: 0;
+  }
+  @-webkit-keyframes roll-in-right {
+    0% {
+      -webkit-transform: translateX(800px) rotate(540deg);
+      transform: translateX(800px) rotate(540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+      transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-right {
+    0% {
+      -webkit-transform: translateX(800px) rotate(540deg);
+      transform: translateX(800px) rotate(540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+      transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes roll-in-top {
+    0% {
+      -webkit-transform: translateY(-800px) rotate(-540deg);
+      transform: translateY(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotate(0deg);
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-top {
+    0% {
+      -webkit-transform: translateY(-800px) rotate(-540deg);
+      transform: translateY(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotate(0deg);
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes roll-in-bottom {
+    0% {
+      -webkit-transform: translateY(600px) rotate(540deg);
+      transform: translateY(600px) rotate(540deg);
+      opacity: 0600px;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotate(0deg);
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-bottom {
+    0% {
+      -webkit-transform: translateY(600px) rotate(540deg);
+      transform: translateY(600px) rotate(540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotate(0deg);
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+      transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+      transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+      transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+      transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+}

@@ -1,74 +1,75 @@
 /* Style Settings */
-@import url('//fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+@import url("//fonts.googleapis.com/css?family=Karla:400,700&display=swap");
 :root {
-    --bgColor:#1C1C1C;
-    --accentColor: #c5d0d3;
-    --font: 'Karla', sans-serif;
+  --bgColor: #1c1c1c;
+  --accentColor: #c5d0d3;
+  --font: "Karla", sans-serif;
 }
 
-body{
-    background:url('images/background.jpg');
-    background-size: cover;
+body {
+  background: url("images/background.jpg");
+  background-size: cover;
+  text-align: center;
 }
 
-#userPhoto{
-    width: 140px;
-    height: 120px;
-    display: block;
-    margin: 35px auto 20px;
-    border-radius: 25px;
+#userPhoto {
+  width: 140px;
+  height: 120px;
+  display: block;
+  margin: 35px auto 20px;
+  border-radius: 25px;
 }
 
-#userName{
-    color: #1c1c1c;
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.25;
-    display: block;
-    font-family: var(--font);
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
+#userName {
+  color: #1c1c1c;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.25;
+  display: block;
+  font-family: var(--font);
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
 }
 
-#links{
-    max-width: 675px;
-    width: auto;
-    display: block;
-    margin: 27px auto;
+p {
+  border-radius: 15px;
+  display: inline-block;
+  background-color: var(--accentColor);
+  color: #1c1c1c;
+  font-family: var(--font);
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 17px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
+  border: solid var(--accentColor) 2px;
 }
-.link{
-    border-radius: 15px;
-    display: block;
-    background-color: var(--accentColor);
-    color: #1c1c1c;
-    font-family: var(--font);
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 17px;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: all .25s cubic-bezier(.08,.59,.29,.99);
-    border: solid var(--accentColor) 2px;
+
+#links {
+  max-width: 675px;
+  width: auto;
+  display: block;
+  margin: 27px auto;
 }
-.container {
-	text-align: center;
-  }
-  p {
-    border-radius: 15px;
-    display: inline-block;
-    background-color: var(--accentColor);
-    color: #1c1c1c;
-    font-family: var(--font);
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 17px;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: all .25s cubic-bezier(.08,.59,.29,.99);
-    border: solid var(--accentColor) 2px;
+
+.link {
+  border-radius: 15px;
+  display: block;
+  background-color: var(--accentColor);
+  color: #1c1c1c;
+  font-family: var(--font);
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 17px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
+  border: solid var(--accentColor) 2px;
 }
-.link:hover{
-    background-color: #5986e7;
-    color: var(--accentColor);
+
+.link:hover {
+  background-color: #5986e7;
+  color: var(--accentColor);
 }

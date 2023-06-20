@@ -1,10 +1,8 @@
 @import url("//fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
-
 :root {
   --shadow: 2px 2px 10px #999999, -2px -2px 10px #ffffff;
   --inner-shadow: inset 2px 2px 10px #999999, inset -2px -2px 10px #ffffff;
 }
-
 
 body {
   align-items: center;
@@ -17,14 +15,6 @@ body {
   margin: 0;
   min-height: 100vh;
   padding-block: clamp(2rem, 10vw, 4rem);
-}
-
-
-
-header {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
   gap: 1em;
 }
 
@@ -48,20 +38,12 @@ a {
   width: 8em;
 }
 
-#userPhoto:hover, .picture:focus {
+#userPhoto:hover,
+.picture:focus {
   box-shadow: var(--shadow);
   outline: none;
 }
-.container {
-	text-align: center;
-  }
-  p {
-    border-radius: 5px;
-    box-shadow: var(--shadow);
-    min-width: 20ch;
-    padding: 0.5em 1em;
-    text-align: center;
-}
+
 #userPhoto::before {
   content: "";
   background: url("homer.jpg");
@@ -72,7 +54,15 @@ a {
   z-index: -1;
 }
 
-main {
+p {
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  min-width: 20ch;
+  padding: 0.5em 1em;
+  text-align: center;
+}
+
+#links {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -88,7 +78,8 @@ main {
   text-align: center;
 }
 
-.link:hover, .link:focus {
+.link:hover,
+.link:focus {
   box-shadow: var(--inner-shadow);
   outline: none;
 }

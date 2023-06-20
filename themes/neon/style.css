@@ -20,6 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
   margin: 30px 50px 20px 50px;
   color: #12cad6;
@@ -29,11 +30,17 @@ body {
   margin: 0.5em 0 1.5em 0;
 }
 
-#userPhoto{
+#userPhoto {
   border-radius: 50px;
   max-width: 100px;
   box-shadow: 0 0 10px 3px #22e4f0;
 }
+
+#userName {
+  margin: 1rem;
+  font-size: 1.8rem;
+}
+
 .link {
   height: 50px;
   width: 20rem;
@@ -54,7 +61,6 @@ body {
   transform: skewX(45deg);
 }
 
-
 @media screen and (min-width: 500px) {
   body {
     padding: 20px 50px;
@@ -63,14 +69,10 @@ body {
 
 @media screen and (min-width: 800px) {
   body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 0;
   }
 
-  main {
-    min-width: 800px;
+  #links {
     padding: 20px 50px;
   }
 }
