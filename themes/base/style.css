@@ -21,7 +21,6 @@ body {
   color: var(--fgColor);
   font-family: var(--font);
   font-size: 0.8rem;
-  min-height: 100vh;
 }
 
 a {
