@@ -10,7 +10,6 @@ body {
 
 #userPhoto {
   width: 150px;
-  height: 150px;
   display: block;
   margin: 20px auto;
   border-radius: 20%;
@@ -57,12 +56,12 @@ body {
 }
 
 p {
-  display: inline-block;
+  max-width: max-content;
+  padding: 17px 17px 32px;
+  margin: 10px auto;
   background-color: rgb(0 0 54);
   color: #fff;
   text-align: center;
-  margin-bottom: 10px;
-  padding: 10px;
   text-decoration: underline dashed;
   font-size: 1.3rem;
   font-weight: 300;
