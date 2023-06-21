@@ -73,6 +73,10 @@ body {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 #userPhoto {
   display: flex;
   flex-direction: column;
@@ -89,8 +93,7 @@ body {
 
 #userName {
   color: #ffffff;
-  margin-top: 20px;
-  text-decoration: none;
+  margin: 20px 0 0;
 }
 
 #links {

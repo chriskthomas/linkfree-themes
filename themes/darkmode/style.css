@@ -10,6 +10,10 @@ body {
   background-color: var(--bgColor);
 }
 
+a {
+  text-decoration: none;
+}
+
 #userPhoto {
   width: 110px;
   height: 110px;
@@ -28,7 +32,6 @@ p {
   font-family: var(--font);
   width: 100%;
   text-align: center;
-  text-decoration: none;
 }
 
 #links {

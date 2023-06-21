@@ -8,6 +8,10 @@ body {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 #userPhoto {
   width: 150px;
   display: block;
@@ -19,7 +23,6 @@ body {
 #description {
   color: #fff;
   font-weight: 300;
-  text-decoration: none;
 }
 
 #userName {

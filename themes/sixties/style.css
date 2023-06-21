@@ -10,6 +10,10 @@ body {
   background-color: var(--bgColor);
 }
 
+a {
+  text-decoration: none;
+}
+
 #userPhoto {
   width: 96px;
   height: 96px;
@@ -27,7 +31,6 @@ body {
   font-family: var(--font);
   width: 100%;
   text-align: center;
-  text-decoration: none;
   text-shadow: 3px 3px 0 var(--accentColor), 1px 1px 0 var(--accentColor),
     2px 2px 0 var(--accentColor);
 }

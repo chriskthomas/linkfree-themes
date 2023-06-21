@@ -14,6 +14,10 @@ body {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 #userPhoto {
   width: 96px;
   height: 96px;
@@ -31,7 +35,6 @@ body {
   font-family: var(--font);
   width: 100%;
   text-align: center;
-  text-decoration: none;
 }
 
 #description {
@@ -68,6 +71,7 @@ body {
   transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
   border: solid var(--accentColor) 2px;
 }
+
 .link:hover {
   background-color: var(--bgColor);
   color: var(--accentColor);

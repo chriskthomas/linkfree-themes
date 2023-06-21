@@ -37,9 +37,12 @@ body {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 #userName {
   display: grid;
-  text-decoration: none;
   color: var(--bgColor);
   margin: auto;
   text-align: center;

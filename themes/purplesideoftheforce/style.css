@@ -26,6 +26,10 @@ body {
   border-radius: 50%;
 }
 
+a {
+  text-decoration: none;
+}
+
 p {
   display: inline-block;
   background-color: var(--brandMainColor);
@@ -50,7 +54,6 @@ p {
   font-family: var(--font);
   width: 100%;
   text-align: center;
-  text-decoration: none;
 }
 
 #links {

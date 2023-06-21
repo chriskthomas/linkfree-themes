@@ -35,6 +35,10 @@ body {
   border: solid var(--bgColor) 2px;
 }
 
+a {
+  text-decoration: none;
+}
+
 p {
   display: inline-block;
   background-color: var(--bgColor);
@@ -58,7 +62,6 @@ p {
   font-family: var(--font);
   width: 100%;
   text-align: center;
-  text-decoration: none;
   text-shadow: 0 0 3px #ff0000, 0 0 5px #009ddc;
 }
 

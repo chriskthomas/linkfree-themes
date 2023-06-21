@@ -15,6 +15,10 @@ body {
   cursor: url(images/sunglasses.png), auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 #userPhoto {
   width: 96px;
   height: 96px;
@@ -33,7 +37,6 @@ body {
   font-family: var(--font);
   width: 100%;
   text-align: center;
-  text-decoration: none;
 }
 
 p {

@@ -30,6 +30,10 @@ body {
   animation: gradient 10s ease infinite;
 }
 
+a {
+  text-decoration: none;
+}
+
 #userPhoto {
   width: 6em;
   height: 6em;
@@ -41,7 +45,6 @@ body {
 
 #userName {
   font-size: 3rem;
-  text-decoration: none;
   margin: 0.5em 0em 1em 0em;
   color: white;
   text-shadow: var(--text-shadow);

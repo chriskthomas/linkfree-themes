@@ -10,6 +10,7 @@ body {
 
 a {
   cursor: crosshair;
+  text-decoration: none;
 }
 
 #userPhoto {
@@ -26,8 +27,8 @@ a {
   display: block;
   width: 100%;
   text-align: center;
-  text-decoration: none;
 }
+
 #userName:hover {
   animation: blinker 1s infinite;
 }

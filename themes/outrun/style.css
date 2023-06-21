@@ -36,6 +36,10 @@ p {
   border-radius: 30px;
 }
 
+a {
+  text-decoration: none;
+}
+
 #userName {
   font-size: 1.5rem;
   font-weight: 600;
@@ -44,7 +48,6 @@ p {
   font-family: var(--font);
   width: 100%;
   text-align: center;
-  text-decoration: none;
   color: #fff5f6;
   text-shadow: 0 0 2px #000, 0 0 10px #fc1f2c75, 0 0 5px #fc1f2c75,
     0 0 25px #fc1f2c75;

@@ -18,6 +18,10 @@ body {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 #userPhoto {
   width: 110px;
   height: 110px;
@@ -37,7 +41,6 @@ body {
   font-family: var(--font);
   width: 100%;
   text-align: center;
-  text-decoration: none;
   text-shadow: -2px -2px 7px var(--bgColor);
 }
 
