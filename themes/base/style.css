@@ -21,6 +21,7 @@ body {
   color: var(--fgColor);
   font-family: var(--font);
   font-size: 0.8rem;
+  margin-top: 2rem;
 }
 
 a {
