@@ -7,20 +7,14 @@ body {
 }
 
 #userName {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: wheat;
   font-size: 15px;
   background-color: black;
-  height: 50px; /* Adjust the height as needed */
-  margin: 0 auto; /* Add this line */
+  padding: 17px 0;
+  margin: 0;
 }
 
 #userPhoto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 200px;
   height: 200px;
 }
