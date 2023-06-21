@@ -1,0 +1,73 @@
+/* Style Settings */
+:root {
+  --bgColor: #fff;
+  --fgColor: #000;
+  --accentColor: green;
+  --font: system-ui, sans-serif;
+}
+
+/* Set rem to about 20px */
+html {
+  font-size: 125%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  background-color: var(--bgColor);
+  color: var(--fgColor);
+  font-family: var(--font);
+  font-size: 0.8rem;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+#userPhoto {
+  width: 7.5rem;
+  border-radius: 20%;
+  margin: 0;
+}
+
+#userName {
+  font-size: 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+#description {
+  margin: 0;
+  text-align: center;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  vertical-align: middle;
+  gap: 1rem;
+  width: 32rem;
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  color: var(--fgColor);
+  border: solid var(--fgColor) 2px;
+}
+
+.link:hover {
+  background-color: var(--accentColor);
+  color: var(--bgColor);
+}
