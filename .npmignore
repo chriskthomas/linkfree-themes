@@ -135,3 +135,6 @@ dist
 
 # GitHub Actions
 .github/
+
+# Preview build script
+make-preview.sh
