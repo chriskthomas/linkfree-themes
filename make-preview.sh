@@ -23,6 +23,7 @@ cat <<EOF >"preview/index.html"
             border: 0;
             width: 100vw;
             height: 100vh;
+            overflow: hidden;
         }
     </style>
 </head>
@@ -55,7 +56,7 @@ jq -c '.[]' 'index.json' | while read theme; do
             "$API_URL" >"preview/$theme_id.html"
 
     # Add theme preview to index
-    echo "<iframe src='$theme_id.html' title='$theme_name' id="$theme_id"></iframe>" >>"preview/index.html"
+    echo "<iframe scrolling='no' src='$theme_id.html' title='$theme_name' id="$theme_id"></iframe>" >>"preview/index.html"
 
     # Tell the user what's going on
     echo "Generated preview for $theme_name"
