@@ -7,7 +7,8 @@
 }
 
 body {
-  background: no-repeat fixed top / cover url("images/background.jpg");
+  /* https://www.vecteezy.com/vector-art/2882808 */
+  background: no-repeat fixed top / cover url("images/background.svg");
   text-align: center;
 }
 
