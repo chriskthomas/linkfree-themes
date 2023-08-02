@@ -8,10 +8,7 @@
 
 body {
   background-color: #fe59d7;
-  background: -webkit-linear-gradient(
-      rgba(29, 38, 113, 0.8),
-      rgba(195, 55, 100, 0.8)
-    ),
+  background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)),
     url("images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,29 +33,42 @@ body {
   box-shadow: 0 0 10px 3px #22e4f0;
 }
 
+a {
+  text-decoration: none;
+}
+
 #userName {
-  margin: 1rem;
+  margin: 0.5rem 0;
   font-size: 1.8rem;
+  color: #12cad6;
+  text-shadow: 2px 2px 5px #22e4f0;
+}
+
+.link,
+.link:before {
+  height: 50px;
+  width: 80vw;
 }
 
 .link {
-  height: 50px;
-  width: 20rem;
-  background-color: #12cad6;
-  box-shadow: 0 0 10px 3px #fe59d7;
   margin-top: 1.3rem;
-  transform: skewX(-45deg);
   display: flex;
   justify-content: center;
   align-items: center;
   font-style: normal;
   cursor: pointer;
   color: white;
+  gap: 0.3em;
   text-decoration: none;
 }
 
-.link span {
-  transform: skewX(45deg);
+.link:before {
+  z-index: -1;
+  position: absolute;
+  background-color: #12cad6;
+  box-shadow: 0 0 10px 3px #fe59d7;
+  transform: skewX(-45deg);
+  content: "";
 }
 
 @media screen and (min-width: 500px) {
@@ -72,7 +82,16 @@ body {
     padding: 0;
   }
 
+  p {
+    margin-bottom: 10px;
+  }
+
   #links {
-    padding: 20px 50px;
+    padding: 0 50px;
+  }
+
+  .link,
+  .link:before {
+    max-width: 640px;
   }
 }
