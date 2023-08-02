@@ -1,6 +1,6 @@
 {
   "name": "linkfree-themes",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "CSS themes for a free and open source alternative to LinkTree",
   "main": "index.json",
   "scripts": {
