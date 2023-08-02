@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  cursor: url(./cursors/cursor.ani), url(./cursors/cursor.png), auto !important;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 500px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/background.gif);
+  background-repeat: repeat;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#userName {
+  text-align: center;
+  color: aquamarine;
+  text-decoration: underline;
+  font-size: 1rem;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  text-align: center;
+  color: aquamarine;
+  margin: 2em 0;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link {
+  width: 20%;
+  margin-bottom: 2em;
+  padding: 1em;
+  background-color: rgb(195, 195, 195);
+  border-top: solid 6px rgb(252, 252, 252);
+  border-left: solid 6px rgb(252, 252, 252);
+  border-bottom: solid 6px rgb(136, 136, 136);
+  border-right: solid 6px rgb(136, 136, 136);
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  text-decoration: none;
+  text-align: center;
+  color: blueviolet;
+  font-size: large;
+}
+
+.link:active {
+  transform: translateY(4px);
+}
