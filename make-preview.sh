@@ -41,6 +41,7 @@ jq -c '.[]' 'index.json' | while read theme; do
     curl -s "https://via.placeholder.com/200x200" |
         curl -s \
             -F "name=$theme_name" \
+            -F "url=#" \
             -F "description=Just Another LinkFree Theme" \
             -F "photo=@-" \
             -F "email=example@example.org" \
