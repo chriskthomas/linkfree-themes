@@ -18,13 +18,14 @@ cat <<EOF >"preview/index.html"
         body {
             margin: 0;
             padding: 0;
+            overflow-x: clip;
         }
 
         iframe {
             border: 0;
             width: 100vw;
             height: 100vh;
-            overflow: hidden;
+            overflow: clip;
         }
     </style>
 </head>
