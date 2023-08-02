@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap");
+
+html {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 10px 10px rgb(118, 172, 241);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+
+body:hover {
+  transform: translate(10px, 10px);
+  box-shadow: 0px 0px rgb(118, 172, 241);
+}
+
+p {
+  margin-bottom: 2rem;
+  width: 30vw;
+}
+
+#userPhoto {
+  width: 40%;
+  border-radius: 50%;
+  box-shadow: 10px 6px rgba(97, 126, 240, 0.671);
+  transition: all 0.5s ease;
+}
+
+#userPhoto:hover {
+  cursor: pointer;
+  transform: translate(10px, 10px);
+  box-shadow: 0px 0px rgba(97, 126, 240, 0.671);
+}
+
+#userName {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.link {
+  background-color: rgb(183, 124, 238);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 10px 10px rgb(255, 187, 109);
+  text-align: center;
+  width: 30vw;
+  color: white;
+}
+
+.link:hover {
+  background-color: rgb(255, 187, 109);
+  box-shadow: 10px 10px rgb(183, 124, 238);
+  color: black;
+}
+
+.link:active {
+  transform: translate(10px, 10px);
+  box-shadow: 0px 0px rgb(183, 124, 238);
+}
+
+@media (max-width: 900px) {
+  body {
+    width: 80%;
+    padding: 1.5rem;
+    box-shadow: none;
+  }
+
+  body:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  body #userName {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  body #userPhoto {
+    width: 60%;
+  }
+
+  body #userPhoto:hover {
+    transform: none;
+    box-shadow: 10px 6px rgba(97, 126, 240, 0.671);
+  }
+
+  p,
+  .link {
+    width: 70vw;
+  }
+}
