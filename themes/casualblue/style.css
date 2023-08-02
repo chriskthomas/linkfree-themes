@@ -9,6 +9,7 @@
 body {
   background-color: var(--accentColor);
   text-align: center;
+  margin: 0;
 }
 
 a {
@@ -52,6 +53,7 @@ p {
   width: 100%;
   background-color: var(--bgColor);
   display: block;
+  margin: 17px 0;
   padding: 27px 0 54px;
 }
 
@@ -67,13 +69,14 @@ h1 {
 
 .link {
   display: block;
+  width: 95%;
   max-width: 675px;
   background-color: var(--accentColor);
   color: var(--bgColor);
   font-family: var(--font);
   text-align: center;
   margin: 27px auto 0;
-  padding: 17px;
+  padding: 17px 0;
   text-decoration: none;
   font-size: 1rem;
   transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
