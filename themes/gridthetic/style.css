@@ -3,19 +3,20 @@
 :root {
   --bgColor: white;
   --accentColor: #363534;
+  --gridColor: #36353480;
   --font: "Modak", cursive;
 }
 
 body {
-  background-image: url("images/background.jpg");
-  background-size: 20%;
+  background-size: 30px 30px;
+  background-image: linear-gradient(
+      to right,
+      var(--gridColor) 2px,
+      transparent 0px
+    ),
+    linear-gradient(to bottom, var(--gridColor) 2px, transparent 0px);
   text-align: center;
-}
-
-@media only screen and (max-width: 600px) {
-  body {
-    background-size: 70%;
-  }
+  background-position: center;
 }
 
 a {
