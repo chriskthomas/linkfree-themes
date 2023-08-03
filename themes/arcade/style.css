@@ -103,3 +103,7 @@ p {
 .link:hover {
   font-size: 1.2rem;
 }
+
+.link i {
+  vertical-align: text-bottom;
+}

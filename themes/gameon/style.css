@@ -36,6 +36,21 @@ a {
   text-transform: none;
 }
 
+p {
+  max-width: max-content;
+  padding: 17px 17px 32px;
+  margin: 10px auto;
+  background-color: rgb(0 0 54);
+  color: #fff;
+  text-align: center;
+  text-decoration: underline dashed;
+  font-size: 1.3rem;
+  font-weight: 300;
+  transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
+  border: 1px solid white;
+  border-radius: 5% 5% 30% 40% / 43% 52% 31% 48%;
+}
+
 #links {
   max-width: 500px;
   width: auto;
@@ -58,22 +73,11 @@ a {
   border-radius: 5% 5% 37% 49% / 43% 52% 31% 48%;
 }
 
-p {
-  max-width: max-content;
-  padding: 17px 17px 32px;
-  margin: 10px auto;
-  background-color: rgb(0 0 54);
-  color: #fff;
-  text-align: center;
-  text-decoration: underline dashed;
-  font-size: 1.3rem;
-  font-weight: 300;
-  transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
-  border: 1px solid white;
-  border-radius: 5% 5% 30% 40% / 43% 52% 31% 48%;
-}
-
 .link:hover {
   background-color: rgb(221 48 119);
   color: #000000;
+}
+
+.link i {
+  vertical-align: text-bottom;
 }
