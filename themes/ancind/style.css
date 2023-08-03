@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+  --bgColor: #1d1919;
+  --fgColor: #ffce76;
+  --fgColorDim: #ffcf765f;
+  --font: system-ui, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  color: var(--fgColor);
+  background-color: var(--bgColor);
+}
+
+body {
+  background-color: var(--bgColor);
+  display: flex;
+  margin: 0 0.4rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  background: rgb(29, 25, 25);
+  background: radial-gradient(
+    circle,
+    rgba(29, 25, 25, 0.8379726890756303) 0%,
+    rgba(29, 25, 25, 1) 50%,
+    rgba(25, 26, 29, 1) 100%
+  );
+}
+
+#userPhoto {
+  border: var(--fgColorDim) 5px solid;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+  border-radius: 0 0 100% 100%;
+  width: 14em;
+  border-top: none;
+  transition: 0.5s ease;
+  filter: grayscale(50%);
+}
+
+#userPhoto:hover {
+  filter: grayscale(0%);
+  border: var(--fgColor) 5px solid;
+  border-top: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#userName,
+#description {
+  text-align: center;
+  color: var(--fgColor);
+}
+
+#userName {
+  font-family: "Montserrat", sans-serif;
+  word-spacing: 0.1em;
+  font-size: 2em;
+  margin: 1rem 0 0;
+  transition: 0.5s ease;
+}
+
+#userName:hover {
+  letter-spacing: 0.09em;
+}
+
+#description {
+  letter-spacing: 0.09em;
+  font-size: 0.8em;
+  opacity: 0.5;
+}
+
+#description:hover {
+  opacity: 1;
+}
+
+#links {
+  width: 32rem;
+  max-width: 100%;
+  margin: 2rem 0 5rem;
+  padding: 2em 4em;
+  border-radius: 2em;
+  border-left: var(--fgColor) 2px solid;
+  border-right: var(--fgColor) 2px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.link {
+  background-color: var(--fgColor);
+  text-decoration: none;
+  width: 100%;
+  color: var(--bgColor);
+  padding: 1em 0;
+  border-radius: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3em;
+  border: var(--fgColor) 2px solid;
+  font-weight: 900;
+  transition: 0.2s ease;
+}
+
+.link:hover,
+a:active {
+  border: var(--fgColor) 2px solid;
+  background-color: var(--bgColor);
+  color: var(--fgColor);
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 0.9em;
+  }
+
+  #links {
+    border: none;
+    padding: 0;
+  }
+}
