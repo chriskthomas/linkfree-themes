@@ -8,11 +8,11 @@
 }
 
 body {
-  background-image: url(images/troels_bg_.png);
+  background-image: url(images/background.png);
 }
 
 * {
-  cursor: url(images/sunglasses.png), auto;
+  cursor: url(cursors/cursor.png), auto;
 }
 
 a {
