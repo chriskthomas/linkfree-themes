@@ -47,7 +47,7 @@ p {
 }
 
 .link {
-  width: 20%;
+  min-width: 20%;
   margin-bottom: 2em;
   padding: 1em;
   background-color: rgb(195, 195, 195);
