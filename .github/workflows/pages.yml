@@ -40,7 +40,9 @@ jobs:
       - run: npm ci
       - run: npm run make-index
       - name: Create previews
-        run: ./make-preview.sh
+        run: ./make-preview.sh "."
+      - name: Copy themes to preview
+        run: cp -r "./themes" "./preview/themes"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 API_URL="https://linkfree.ckt.im/api.php"
-THEMES_SOURCE="https://cdn.jsdelivr.net/npm/linkfree-themes@$(jq -r '.version' 'package.json')"
+THEMES_SOURCE="$1"
 
 rm -rf "preview"
 mkdir "preview"

@@ -22,7 +22,7 @@ jobs:
       - run: npm ci
       - run: npm run make-index
       - name: Create previews
-        run: ./make-preview.sh
+        run: ./make-preview.sh "https://cdn.jsdelivr.net/npm/linkfree-themes@$(jq -r '.version' 'package.json')"
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
