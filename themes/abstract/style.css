@@ -11,7 +11,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(./images/background.png);
+  /* https://aladar.me/media/posts/44/Doubs.svg */
+  background-image: url(./images/background.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
