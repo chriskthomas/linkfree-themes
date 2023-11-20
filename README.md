@@ -1,8 +1,6 @@
 # LinkFree Themes
 
-This is a collection of themes for [LinkFree Generator](https://github.com/writeplace/linkfree-generator). Several themes are currently working in reduced functionality because they rely on customized html templates that are not available in the generator. These include:
-
-- **PurpleSideOfTheForce** No audio.
+This is a collection of themes for [LinkFree Generator](https://github.com/writeplace/linkfree-generator). You can preview the themes [here](https://writeplace.github.io/linkfree-themes/).
 
 ## Development
 
