@@ -1,6 +1,6 @@
 # LinkFree Themes
 
-This is a collection of themes for [LinkFree Generator](https://github.com/writeplace/linkfree-generator). You can preview the themes [here](https://writeplace.github.io/linkfree-themes/).
+This is a collection of themes for [LinkFree Generator](https://github.com/chriskthomas/linkfree-generator). You can preview the themes [here](https://chriskthomas.github.io/linkfree-themes/).
 
 ## Development
 
