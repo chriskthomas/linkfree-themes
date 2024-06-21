@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/writeplace/linkfree-themes.git"
+    "url": "git+https://github.com/chriskthomas/linkfree-themes.git"
   },
   "keywords": [
     "css",
@@ -18,7 +18,7 @@
   "author": "Chris K. Thomas",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/writeplace/linkfree-themes/issues"
+    "url": "https://github.com/chriskthomas/linkfree-themes/issues"
   },
-  "homepage": "https://github.com/writeplace/linkfree-themes#readme"
+  "homepage": "https://github.com/chriskthomas/linkfree-themes#readme"
 }
