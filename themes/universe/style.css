@@ -1,10 +1,17 @@
 /* Style Settings */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+:root {
+  --bgColor: #000;
+  --fgColor: #fff;
+  --accentColor: rgba(255, 255, 255, 0.3);
+  --font: "Open Sans", sans-serif;
+}
 
 body {
   background: url("images/background.jpeg");
-  background-color: #000;
-  font-family: "Open Sans", sans-serif;
+  background-color: var(--bgColor);
+  color: var(--fgColor);
+  font-family: var(--font);
   font-weight: 600;
 }
 
@@ -21,10 +28,10 @@ a {
 }
 
 #userName {
-  color: #fff;
   display: block;
   width: 100%;
   text-align: center;
+  color: var(--fgColor);
   font-size: 2rem;
   font-weight: 300;
   letter-spacing: 0.2rem;
@@ -33,6 +40,8 @@ a {
 
 #description {
   font-weight: 300;
+  width: 100%;
+  text-align: center;
   margin-top: 5px;
   text-transform: none;
 }
@@ -51,7 +60,7 @@ i.fa {
 .link {
   display: block;
   background-color: rgba(66, 110, 255, 0.2);
-  color: #fff;
+  color: var(--fgColor);
   text-align: center;
   margin-bottom: 20px;
   padding: 17px;
@@ -62,7 +71,7 @@ i.fa {
 }
 
 .link:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  color: #000;
+  background-color: var(--accentColor);
+  color: var(--bgColor);
   border: none;
 }
