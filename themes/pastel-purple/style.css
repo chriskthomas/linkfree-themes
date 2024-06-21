@@ -1,7 +1,7 @@
 /* Style Settings */
 :root {
   --bgColor: #f0d8ff;
-  --fgColor: #fff;
+  --fgColor: #000;
   --accentColor: #ff69b4;
   --font: Arial, sans-serif;
 }
@@ -38,6 +38,7 @@ a {
 #userName {
   margin: 0;
   text-align: center;
+  color: var(--fgColor);
 }
 
 #description {
@@ -59,7 +60,7 @@ a {
   align-items: baseline;
   justify-content: center;
   gap: 0.5rem;
-  color: var(--fgColor);
+  color: #fff;
   padding: 10px 20px;
   margin: 10px;
   background-color: #ffb6c1; /* Pastel button color */
