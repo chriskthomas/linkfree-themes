@@ -108,6 +108,12 @@ a {
   animation-name: fadeInRight;
 }
 
+ion-icon {
+  vertical-align: text-bottom;
+  width: 1.1875em;
+  height: 1.1875em;
+}
+
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;

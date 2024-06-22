@@ -77,7 +77,7 @@ p {
   padding: 0.5em 1em;
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: initial;
   gap: 0.5em;
   justify-content: center;
 }

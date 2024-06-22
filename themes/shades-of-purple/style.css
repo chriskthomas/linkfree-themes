@@ -70,7 +70,7 @@ p {
 .link {
   display: flex;
   gap: 0.2em;
-  align-items: center;
+  align-items: initial;
   justify-content: center;
   font-size: 1.8rem;
   text-decoration: none;

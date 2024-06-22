@@ -57,7 +57,7 @@ a {
 .link {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: initial;
   justify-content: center;
   gap: 0.5rem;
   color: #fff;

@@ -79,6 +79,12 @@ p {
   color: var(--bgColor);
 }
 
+ion-icon {
+  vertical-align: text-bottom;
+  width: 1.1875em;
+  height: 1.1875em;
+}
+
 .cat {
   width: 100px;
   /*width of your image*/

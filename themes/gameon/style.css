@@ -78,6 +78,8 @@ p {
   color: #000000;
 }
 
-.link ion-icon {
+ion-icon {
   vertical-align: text-bottom;
+  width: 1.1875em;
+  height: 1.1875em;
 }

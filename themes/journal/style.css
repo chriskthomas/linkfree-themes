@@ -85,3 +85,9 @@ a {
   color: #333;
   font-size: 1.3rem;
 }
+
+ion-icon {
+  vertical-align: text-bottom;
+  width: 1.1875em;
+  height: 1.1875em;
+}

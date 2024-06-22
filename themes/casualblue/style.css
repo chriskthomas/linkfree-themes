@@ -87,3 +87,9 @@ h1 {
   background-color: #3b6978;
   color: #ffffff;
 }
+
+ion-icon {
+  vertical-align: text-bottom;
+  width: 1.1875em;
+  height: 1.1875em;
+}

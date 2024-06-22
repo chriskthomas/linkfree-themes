@@ -84,3 +84,9 @@ p {
   border-color: var(--accentColor);
   box-shadow: 4px 4px 2px var(--brandMainColor);
 }
+
+ion-icon {
+  vertical-align: text-bottom;
+  width: 1.1875em;
+  height: 1.1875em;
+}

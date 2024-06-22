@@ -84,3 +84,9 @@ p {
   background-color: var(--selection);
   color: var(--purple);
 }
+
+ion-icon {
+  vertical-align: text-bottom;
+  width: 1.1875em;
+  height: 1.1875em;
+}

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-API_URL="https://linkfree.ckt.im/api.php"
+API_URL="https://linkfree.fly.dev/api.php"
 THEMES_SOURCE="$1"
 
 rm -rf "preview"
@@ -46,13 +46,13 @@ jq -c '.[]' 'index.json' | while read theme; do
             -F "photo=@-" \
             -F "email=example@example.org" \
             -F "links[1][name]=LinkedIn" \
-            -F "links[1][icon]=linkedin-square" \
+            -F "links[1][icon]=logo-linkedin" \
             -F "links[1][url]=https://linkedin.com" \
             -F "links[2][name]=GitHub" \
-            -F "links[2][icon]=github" \
+            -F "links[2][icon]=logo-github" \
             -F "links[2][url]=https://github.com" \
             -F "links[3][name]=Mastodon" \
-            -F "links[3][icon]=mastodon" \
+            -F "links[3][icon]=logo-mastodon" \
             -F "links[3][url]=https://joinmastodon.org" \
             -F "theme=$theme" \
             -F "themes-source=$THEMES_SOURCE" \
