@@ -107,7 +107,7 @@ a {
 .link {
   display: flex;
   flex-direction: row;
-  align-items: initial;
+  align-items: center;
   justify-content: center;
   gap: 12px;
   background-color: #ffffff;

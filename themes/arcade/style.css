@@ -107,3 +107,9 @@ p {
 .link ion-icon {
   vertical-align: text-bottom;
 }
+
+ion-icon {
+  vertical-align: text-bottom;
+  width: 1.1875em;
+  height: 1.1875em;
+}

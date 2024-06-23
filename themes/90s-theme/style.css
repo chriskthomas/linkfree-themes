@@ -65,3 +65,9 @@ p {
 .link:active {
   transform: translateY(4px);
 }
+
+ion-icon {
+  vertical-align: text-bottom;
+  width: 1.1875em;
+  height: 1.1875em;
+}

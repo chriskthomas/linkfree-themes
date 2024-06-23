@@ -88,3 +88,9 @@ p {
   transform: translate(2px);
   transition: all ease-in 0.3s;
 }
+
+ion-icon {
+  vertical-align: text-bottom;
+  width: 1.1875em;
+  height: 1.1875em;
+}

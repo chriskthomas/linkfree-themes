@@ -78,3 +78,9 @@ svg {
   color: var(--background);
   transform: translate(9px, -9px);
 }
+
+ion-icon {
+  vertical-align: text-bottom;
+  width: 1.1875em;
+  height: 1.1875em;
+}

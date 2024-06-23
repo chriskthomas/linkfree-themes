@@ -47,3 +47,9 @@ p {
   opacity: 0.9;
   background-color: #170fff;
 }
+
+ion-icon {
+  vertical-align: text-bottom;
+  width: 1.1875em;
+  height: 1.1875em;
+}
