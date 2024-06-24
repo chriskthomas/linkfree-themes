@@ -4,7 +4,6 @@
   --bgColor: rgb(38, 35, 53);
   --accentColor: rgb(249, 42, 173);
   --font: "Teko", sans-serif;
-  --shaddow: 0 0 2px #100c0f, 0 0 5px #dc078e33, 0 0 10px #fff3;
 }
 
 body {
@@ -61,11 +60,14 @@ a {
 }
 
 .link {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
   background: linear-gradient(to bottom, #fff951 25%, #fc28a8);
   color: var(--bgColor);
   font-family: var(--font);
-  text-align: center;
   margin-bottom: 20px;
   padding: 17px;
   text-decoration: none;
@@ -81,7 +83,6 @@ a {
 }
 
 ion-icon {
-  vertical-align: text-bottom;
   width: 1.1875em;
   height: 1.1875em;
 }
