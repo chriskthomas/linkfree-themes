@@ -77,11 +77,14 @@ a {
 }
 
 .link {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   background-color: var(--accentColor);
   color: var(--bgColor);
   font-family: var(--font);
-  text-align: center;
   margin-bottom: 20px;
   margin-left: 3%;
   margin-right: 3%;
@@ -96,10 +99,4 @@ a {
 .link:hover {
   background-color: var(--bgColor);
   color: var(--accentColor);
-}
-
-ion-icon {
-  vertical-align: text-bottom;
-  width: 1.1875em;
-  height: 1.1875em;
 }
