@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root,
+:host {
+    --md-sys-color-background: #fff8f5;
+    --md-sys-color-on-background: #201a16;
+    --md-sys-color-surface: #fff8f5;
+    --md-sys-color-surface-dim: #e4d8d1;
+    --md-sys-color-surface-bright: #fff8f5;
+    --md-sys-color-surface-container-lowest: #ffffff;
+    --md-sys-color-surface-container-low: #fef1ea;
+    --md-sys-color-surface-container: #f8ebe4;
+    --md-sys-color-surface-container-high: #f3e6de;
+    --md-sys-color-surface-container-highest: #ede0d9;
+    --md-sys-color-on-surface: #201a16;
+    --md-sys-color-surface-variant: #f4ded1;
+    --md-sys-color-on-surface-variant: #52443a;
+    --md-sys-color-inverse-surface: #362f2a;
+    --md-sys-color-inverse-on-surface: #fbeee7;
+    --md-sys-color-outline: #857469;
+    --md-sys-color-outline-variant: #d7c3b6;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-surface-tint: #89511f;
+    --md-sys-color-primary: #6f3c0a;
+    --md-sys-color-on-primary: #ffffff;
+    --md-sys-color-primary-container: #9a5f2c;
+    --md-sys-color-on-primary-container: #ffffff;
+    --md-sys-color-inverse-primary: #ffb77e;
+    --md-sys-color-secondary: #775841;
+    --md-sys-color-on-secondary: #ffffff;
+    --md-sys-color-secondary-container: #ffdac0;
+    --md-sys-color-on-secondary-container: #5d412b;
+    --md-sys-color-tertiary: #4a4d05;
+    --md-sys-color-on-tertiary: #ffffff;
+    --md-sys-color-tertiary-container: #6f722a;
+    --md-sys-color-on-tertiary-container: #ffffff;
+    --md-sys-color-error: #ba1a1a;
+    --md-sys-color-on-error: #ffffff;
+    --md-sys-color-error-container: #ffdad6;
+    --md-sys-color-on-error-container: #410002;
+
+    --md-ref-typeface-brand: 'Open Sans';
+    --md-ref-typeface-plain: 'Open Sans';
+    --md-ref-typeface-mono: 'Roboto Mono';
+}
+
+body {
+    margin: 0;
+    background-color: var(--md-sys-color-secondary-container);
+    font-family: var(--md-ref-typeface-plain);
+}
+
+#body-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    background-color: var(--md-sys-color-background);
+    border-radius: 30px;
+    height: 94vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 2%;
+}
+
+#body-container #userPhoto {
+    width: auto;
+    height: 150px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-top: 50px;
+    border: var(--md-sys-color-outline) solid 1px;
+    object-fit: cover;
+    box-sizing: content-box; 
+}
+
+a{
+    text-decoration: none;
+    color: var(--md-sys-color-primary);
+}
+
+#userName{
+    font-size: 48px;
+    position: relative; 
+    transition: 0.1s;
+    margin: 5px;
+    margin-bottom: 2px;
+}
+
+#userName:hover::before {
+    content: "# ";
+    position: absolute;
+    left: -32px;
+    top: 10px;
+    font-size: 0.75em; 
+    font-weight: 500;
+    line-height: 48px;
+    transition: 0.1s;
+    font-family: var(--md-ref-typeface-mono);
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+#description{
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-family: var(--md-ref-typeface-mono);
+    margin: 5px 5px 20px 5px;
+}
+
+#links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    position: relative;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 15px 40px; /* Original padding */
+    border-radius: 30px;
+    background-color: var(--md-sys-color-secondary-container);
+    transition: 0.1s;
+    font-weight: 500;
+    border: var(--md-sys-color-outline-variant) solid 1px; /* Add a transparent border */
+}
+
+.link:hover{
+    border: var(--md-sys-color-outline) solid 1px;
+    box-shadow: var(--md-sys-color-outline-variant) 3px 3px 5px;
+}
+
+.link ion-icon {
+    margin-right: 10px;
+}
+
+ion-icon{
+    font-size: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 8px; 
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--md-sys-color-primary); 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-button {
+    display: none; 
+}
+
+* {
+    scrollbar-width: thin; 
+    scrollbar-color: var(--md-sys-color-primary) transparent;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Smaller font size on mobile devices */
+    }
+
+    #body-container {
+        padding: 5px; /* Less padding for smaller screens */
+        height: auto; /* Adjust height for mobile */
+        overflow-y: auto; /* Ensure smooth scrolling on mobile */
+    }
+
+    .link {
+        padding: 10px 20px; /* Smaller padding for links */
+    }
+
+    /* Adjustments for other elements as needed */
+}
