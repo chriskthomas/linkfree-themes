@@ -3,47 +3,17 @@
 
 :root,
 :host {
-    --md-sys-color-background: #fff8f5;
-    --md-sys-color-on-background: #201a16;
-    --md-sys-color-surface: #fff8f5;
-    --md-sys-color-surface-dim: #e4d8d1;
-    --md-sys-color-surface-bright: #fff8f5;
-    --md-sys-color-surface-container-lowest: #ffffff;
-    --md-sys-color-surface-container-low: #fef1ea;
-    --md-sys-color-surface-container: #f8ebe4;
-    --md-sys-color-surface-container-high: #f3e6de;
-    --md-sys-color-surface-container-highest: #ede0d9;
-    --md-sys-color-on-surface: #201a16;
-    --md-sys-color-surface-variant: #f4ded1;
-    --md-sys-color-on-surface-variant: #52443a;
-    --md-sys-color-inverse-surface: #362f2a;
-    --md-sys-color-inverse-on-surface: #fbeee7;
-    --md-sys-color-outline: #857469;
-    --md-sys-color-outline-variant: #d7c3b6;
-    --md-sys-color-shadow: #000000;
-    --md-sys-color-scrim: #000000;
-    --md-sys-color-surface-tint: #89511f;
-    --md-sys-color-primary: #6f3c0a;
-    --md-sys-color-on-primary: #ffffff;
-    --md-sys-color-primary-container: #9a5f2c;
-    --md-sys-color-on-primary-container: #ffffff;
-    --md-sys-color-inverse-primary: #ffb77e;
-    --md-sys-color-secondary: #775841;
-    --md-sys-color-on-secondary: #ffffff;
-    --md-sys-color-secondary-container: #ffdac0;
-    --md-sys-color-on-secondary-container: #5d412b;
-    --md-sys-color-tertiary: #4a4d05;
-    --md-sys-color-on-tertiary: #ffffff;
-    --md-sys-color-tertiary-container: #6f722a;
-    --md-sys-color-on-tertiary-container: #ffffff;
-    --md-sys-color-error: #ba1a1a;
-    --md-sys-color-on-error: #ffffff;
-    --md-sys-color-error-container: #ffdad6;
-    --md-sys-color-on-error-container: #410002;
-
     --md-ref-typeface-brand: 'Open Sans';
     --md-ref-typeface-plain: 'Open Sans';
     --md-ref-typeface-mono: 'Roboto Mono';
+
+    --md-sys-color-secondary-container: #ffdac0;
+    --md-sys-color-background: #fff8f5;
+    --md-sys-color-outline: #857469;
+    --md-sys-color-outline-variant: #d7c3b6;
+    --md-sys-color-primary: #6f3c0a;
+    --md-sys-color-on-surface-variant: #52443a;
+    --md-sys-color-secondary: #775841;
 }
 
 body {
@@ -124,12 +94,12 @@ a{
     justify-content: center;
     align-items: center;
     margin: 10px;
-    padding: 15px 40px; /* Original padding */
+    padding: 15px 40px; 
     border-radius: 30px;
     background-color: var(--md-sys-color-secondary-container);
     transition: 0.1s;
     font-weight: 500;
-    border: var(--md-sys-color-outline-variant) solid 1px; /* Add a transparent border */
+    border: var(--md-sys-color-outline-variant) solid 1px;
 }
 
 .link:hover{
