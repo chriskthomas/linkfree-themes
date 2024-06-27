@@ -170,18 +170,18 @@ ion-icon{
 
 @media (max-width: 768px) {
     body {
-        font-size: 14px; /* Smaller font size on mobile devices */
+        font-size: 14px;
     }
 
     #body-container {
-        padding: 5px; /* Less padding for smaller screens */
-        height: auto; /* Adjust height for mobile */
-        overflow-y: auto; /* Ensure smooth scrolling on mobile */
+        padding: 5px; 
+        height: auto; 
+        overflow-y: auto; 
+        height: 88vh;
+        margin: 20px;
     }
 
     .link {
-        padding: 10px 20px; /* Smaller padding for links */
+        padding: 10px 20px; 
     }
-
-    /* Adjustments for other elements as needed */
 }
