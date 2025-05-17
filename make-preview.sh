@@ -56,6 +56,7 @@ jq -c '.[]' 'index.json' | while read theme; do
             -F "links[3][url]=https://joinmastodon.org" \
             -F "theme=$theme" \
             -F "themes-source=$THEMES_SOURCE" \
+            -F "ionicons-source=https://cdn.jsdelivr.net/npm/ionicons@8.0.8" \
             "$API_URL" >"preview/$theme_id.html"
 
     # Add theme preview to index
