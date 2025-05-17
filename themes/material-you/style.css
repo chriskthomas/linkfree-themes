@@ -28,7 +28,7 @@ body {
   align-items: center;
   background-color: var(--md-sys-color-background);
   border-radius: 30px;
-  height: calc(100vh - 20px - 4vw);
+  height: calc(100vh - 4vw);
   overflow-y: auto;
   box-sizing: border-box;
   padding: 10px;
@@ -146,7 +146,7 @@ ion-icon {
   body {
     padding: 5px;
     overflow-y: auto;
-    height: calc(100vh - 10px - 40px);
+    height: calc(100vh - 40px);
     margin: 20px;
   }
 
