@@ -28,11 +28,11 @@ body {
   align-items: center;
   background-color: var(--md-sys-color-background);
   border-radius: 30px;
-  height: 94vh;
+  height: calc(100vh - 20px - 4vw);
   overflow-y: auto;
   box-sizing: border-box;
   padding: 10px;
-  margin: 2%;
+  margin: 2vw;
 }
 
 body #userPhoto {
@@ -145,9 +145,8 @@ ion-icon {
 
   body {
     padding: 5px;
-    height: auto;
     overflow-y: auto;
-    height: 88vh;
+    height: calc(100vh - 10px - 40px);
     margin: 20px;
   }
 
