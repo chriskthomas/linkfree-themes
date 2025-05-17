@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root,
+:host {
+    --md-ref-typeface-brand: 'Open Sans';
+    --md-ref-typeface-plain: 'Open Sans';
+    --md-ref-typeface-mono: 'Roboto Mono';
+
+    --md-sys-color-secondary-container: #ffdac0;
+    --md-sys-color-background: #fff8f5;
+    --md-sys-color-outline: #857469;
+    --md-sys-color-outline-variant: #d7c3b6;
+    --md-sys-color-primary: #6f3c0a;
+    --md-sys-color-on-surface-variant: #52443a;
+    --md-sys-color-secondary: #775841;
+}
+
+body {
+    margin: 0;
+    background-color: var(--md-sys-color-secondary-container);
+    font-family: var(--md-ref-typeface-plain);
+}
+
+#body-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    background-color: var(--md-sys-color-background);
+    border-radius: 30px;
+    height: 94vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 2%;
+}
+
+#body-container #userPhoto {
+    width: auto;
+    height: 150px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-top: 50px;
+    border: var(--md-sys-color-outline) solid 1px;
+    object-fit: cover;
+    box-sizing: content-box; 
+}
+
+a{
+    text-decoration: none;
+    color: var(--md-sys-color-primary);
+}
+
+#userName{
+    font-size: 48px;
+    position: relative; 
+    transition: 0.1s;
+    margin: 5px;
+    margin-bottom: 2px;
+}
+
+#userName:hover::before {
+    content: "# ";
+    position: absolute;
+    left: -32px;
+    top: 10px;
+    font-size: 0.75em; 
+    font-weight: 500;
+    line-height: 48px;
+    transition: 0.1s;
+    font-family: var(--md-ref-typeface-mono);
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+#description{
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-family: var(--md-ref-typeface-mono);
+    margin: 5px 5px 20px 5px;
+}
+
+#links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    position: relative;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 15px 40px; 
+    border-radius: 30px;
+    background-color: var(--md-sys-color-secondary-container);
+    transition: 0.1s;
+    font-weight: 500;
+    border: var(--md-sys-color-outline-variant) solid 1px;
+}
+
+.link:hover{
+    border: var(--md-sys-color-outline) solid 1px;
+    box-shadow: var(--md-sys-color-outline-variant) 3px 3px 5px;
+}
+
+.link ion-icon {
+    margin-right: 10px;
+}
+
+ion-icon{
+    font-size: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 8px; 
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--md-sys-color-primary); 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-button {
+    display: none; 
+}
+
+* {
+    scrollbar-width: thin; 
+    scrollbar-color: var(--md-sys-color-primary) transparent;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    #body-container {
+        padding: 5px; 
+        height: auto; 
+        overflow-y: auto; 
+        height: 88vh;
+        margin: 20px;
+    }
+
+    .link {
+        padding: 10px 20px; 
+    }
+}
