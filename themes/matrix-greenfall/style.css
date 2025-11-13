@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --bgColor: #000;
+  --fgColor: rgb(0 , 255, 0);
+  --font: "Roboto", monospace;
+  --bkgd: url("images/background.jpg");
+}
+
+html {
+  background-image: var(--bkgd);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font);
+}
+
+#userPhoto {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 10px auto;
+  border: 1px solid var(--fgColor);
+  border-radius: 50%;
+}
+
+#userName {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bgColor);
+  width: 400px;
+  height: 100px;
+  margin: 5px;
+  color: var(--fgColor);
+  text-align: center;
+  /*vertical-align: middle;*/
+  justify-content: center;
+}
+
+#description {
+  background-color: var(--bgColor);
+  color: var(--fgColor);
+  margin-top: 50px;
+  font-size: 1.3rem;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  vertical-align: middle;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 32rem;
+  font-size: 1.5rem;
+  gap: 1rem;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 1px solid var(--fgColor);
+  border-radius: 15px;
+  padding: 1rem;
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: var(--fgColor);
+}
+
+.link:hover {
+  background: rgba(0 , 255, 0, 0.5);
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}

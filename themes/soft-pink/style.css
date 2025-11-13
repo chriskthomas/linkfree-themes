@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+:root {
+  --bgColor: #ffe9fa;
+  --fgColor: #4b4b4b;
+  --accentColor: #ff6cff;
+  --font: "Marck Script", sans-serif;
+}
+
+/* Set rem to about 20px */
+html {
+  background: radial-gradient(circle, #ffe9fa, #ffd6f4);
+  font-size: 110%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  color: var(--fgColor);
+  font-family: var(--font);
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+#userPhoto {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 5px solid var(--accentColor);
+}
+
+#userName {
+  margin: 0;
+}
+
+#description {
+  margin-top: 0;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  vertical-align: middle;
+  gap: 1rem;
+  width: 32rem;
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  background: var(--accentColor);
+  color: white;
+  padding: 1rem;
+  gap: 0.5rem;
+  border-radius: 40px;
+  transform: scale(1);
+  transition: 0.2s;
+  justify-content: center;
+}
+
+.link:hover {
+  transform: scale(1.08);
+}
+
+a {
+  text-decoration: none;
+}

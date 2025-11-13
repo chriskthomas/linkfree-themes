@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap');
+
+:root {
+  --bgColor: #0d1117;
+  --fgColor: #ffffff;
+  --accentColor: rgba(0, 229, 255, 0.5);
+  --unColor: rgb(85, 26, 139);
+  --font: "Stack Sans Notch", system-ui, sans-serif;
+  --bkgd: linear-gradient(135deg, #0d1117, #142231);
+}
+
+html {
+  font-size: 125%;
+}
+
+body {
+  background: var(--bkgd);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--font);
+  padding-top: 2rem;
+  color: var(--fgColor);
+  justify-content: center;
+}
+
+#userPhoto {
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  border: 2px solid rgba(255,255,255,0.2);
+}
+
+#userName {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--unColor);
+}
+
+#description {
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  max-width: 95%;
+  gap: 1rem;
+  margin-top: 1rem;
+  align-items: stretch;
+  vertical-align: middle;
+}
+
+.link {
+  padding: 1rem;
+  text-align: center;
+  background: var(--bkgd);
+  font-size: 1rem;
+  border: 1px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  color: var(--fgColor);
+  transition: 0.3s;
+}
+
+.link:hover {
+  color: #000;
+  background: var(--accentColor);
+  border-color: var(--accentColor);
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,54 @@
+:root {
+  --bgColor: #f8f1e2;
+  --fgColor: #2b2b2b;
+  --accentColor: #333;
+  --font: "Georgia", serif;
+}
+
+html {
+  background: var(--bgColor);
+}
+
+body {
+  width: 35rem;
+  max-width: 95%;
+  border: 2px solid #000;
+  padding: 1.5rem;
+  background: #fffdf8;
+  color: var(--fgColor);
+  font-family: var(--font);
+  font-size: 1.3rem;
+  margin: 2rem auto; /* Centraliza */
+}
+
+#userPhoto {
+  width: 6rem;
+  border-radius: 4px;
+  border: 2px solid #000;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  vertical-align: middle;
+  gap: 1rem;
+  width: 32rem;
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+.link {
+  border-bottom: 2px dotted #000;
+  padding: 1rem;
+  text-align: left;
+  transition: 0.2s;
+}
+
+.link:hover {
+  background: #f2e8d2;
+}
+
+a {
+  text-decoration: none;
+}

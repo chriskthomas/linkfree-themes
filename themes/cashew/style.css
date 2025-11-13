@@ -1,0 +1,86 @@
+/* Style Settings */
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+
+:root {
+  --bgColor: #fff;
+  --fgColor: #000;
+  --accentColor: green;
+  --font: "Oleo Script", sans-serif;
+  --bkgd: url("images/background.jpg");
+}
+
+/* Set rem to about 20px */
+html {
+  font-size: 125%;
+}
+
+body {  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  background-image: var(--bkgd);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--fgColor);
+  font-family: var(--font);
+  font-size: 0.8rem;
+  margin-top: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+#userPhoto {
+  width: 100px;
+  height: 100px;
+  border: 1px solid var(--fgColor);
+  border-radius: 20%;
+  margin: 0;
+}
+
+#userName {
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+  color: var(--fgColor);
+}
+
+#description {
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  vertical-align: middle;
+  gap: 1rem;
+  width: 32rem;
+  max-width: 100%;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  color: var(--fgColor);
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.link:hover {
+  background-color: rgba(234, 39, 1, 0.3);
+  color: var(--bgColor);
+}
