@@ -1,0 +1,243 @@
+/* Style Settings */
+:root {
+  --bgColor: #0b1026;
+  --fgColor: #fff;
+  --indigoColor: #1e1b4b;
+  --violetColor: #190821;
+  --redColor: #f9564f;
+  --blueColor: #b4c5e4;
+  --font: sans-serif;
+}
+
+html {
+  font-size: 125%;
+  height:100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  background-color: var(--bgColor);
+  color: var(--fgColor);
+  font-family: var(--font);
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  background: linear-gradient(to bottom, var(--bgColor) 0%, var(--indigoColor) 60%, var(--violetColor) 100%);
+  background-color: var(--bgColor);
+}
+
+a {
+  text-decoration: none;
+}
+
+#userPhoto {
+  width: 7.5rem;
+  border-radius: 20%;
+  margin: 0;
+}
+
+#userName {
+  color: var(--fgColor);
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+}
+
+#description {
+  margin: 0;
+  text-align: center;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  vertical-align: middle;
+  gap: 1rem;
+  width: 32rem;
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  color: var(--fgColor);
+  font-size: 1.25rem;
+  background-color: var(--indigoColor);
+  opacity: 0.9;
+  transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
+  border-radius: 10px;
+}
+
+.link:hover {
+  background-color: var(--fgColor);
+  color: var(--bgColor);
+  opacity: 1;
+}
+
+ion-icon {
+  vertical-align: text-bottom;
+  width: 1.1875em;
+  height: 1.1875em;
+}
+
+
+/* FIREWORKS */
+/* shadows around this box will animate (each comma represents a bubble) */
+#fireworks > div {
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  box-shadow: 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+    0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+    0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+    0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+    0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+    0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+    0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+    0 0 #fff, 0 0 #fff, 0 0 #fff;
+}
+
+/* all individual flare group -> position & size */
+#fireworks div:nth-of-type(1) {
+  width: 4px;
+  height: 4px;
+  left: 50%;
+  top: 50%;
+
+  animation: explosion-2-blue 2s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+
+#fireworks div:nth-of-type(2) {
+  left: 20%;
+  top: 60%;
+  width: 6px;
+  height: 6px;
+
+  animation: 1.5s explosion-2-red ease-in-out infinite;
+  animation-delay: 0.4s;
+}
+
+#fireworks div:nth-of-type(3) {
+  left: 80%;
+  top: 60%;
+  width: 8px;
+  height: 8px;
+
+  animation: 1s explosion-2-blue ease-in-out infinite;
+  animation-delay: 0.6s;
+}
+
+#fireworks div:nth-of-type(4) {
+  left: 90%;
+  top: 25%;
+  width: 4px;
+  height: 4px;
+
+  animation: 1s explosion-2-red ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+#fireworks div:nth-of-type(5) {
+  left: 60%;
+  top: 90%;
+  width: 4px;
+  height: 4px;
+
+  animation: 1s explosion-2-blue ease-in-out infinite;
+  animation-delay: 1.2s;
+}
+
+#fireworks div:nth-of-type(6) {
+  left: 50%;
+  top: 15%;
+  width: 4px;
+  height: 4px;
+
+  animation: 1s explosion-2-red ease-in-out infinite;
+  animation-delay: 1.4s;
+}
+
+#fireworks div:nth-of-type(7) {
+  left: 10%;
+  top: 90%;
+  width: 4px;
+  height: 4px;
+
+  animation: 1s explosion-2-blue ease-in-out infinite;
+  animation-delay: 1.8s;
+}
+
+/* De berekeningen heb ik niet zelf gemaakt die heb ik van: , ondanks dat kan ik je wel alles uitleggen. */
+/* red explosion effect  */
+@keyframes explosion-2-red {
+  to {
+    box-shadow: 226px -325.6666666667px var(--redColor),
+      -208px -177.6666666667px var(--redColor), -113px -220.6666666667px var(--redColor),
+      -64px -20.6666666667px var(--redColor), 203px -202.6666666667px var(--redColor),
+      -12px -161.6666666667px var(--redColor), 138px -232.6666666667px var(--redColor),
+      -249px -148.6666666667px var(--redColor), -42px -286.6666666667px var(--redColor),
+      -5px -0.6666666667px var(--redColor), 173px 6.3333333333px var(--redColor),
+      -44px -165.6666666667px var(--redColor), -40px 2.3333333333px var(--redColor),
+      182px -276.6666666667px var(--redColor), 108px -151.6666666667px var(--redColor),
+      79px -89.6666666667px var(--redColor), 122px -241.6666666667px var(--redColor),
+      211px 38.3333333333px var(--redColor), -47px -147.6666666667px var(--redColor),
+      -226px -118.6666666667px var(--redColor), -37px -373.6666666667px var(--redColor),
+      204px -118.6666666667px var(--redColor), 137px -63.6666666667px var(--redColor),
+      62px -49.6666666667px var(--redColor), 14px -11.6666666667px var(--redColor),
+      -222px -170.6666666667px var(--redColor), -115px -163.6666666667px var(--redColor),
+      223px -32.6666666667px var(--redColor), -152px -49.6666666667px var(--redColor),
+      -192px -88.6666666667px var(--redColor), -50px -197.6666666667px var(--redColor),
+      126px -29.6666666667px var(--redColor), -142px -387.6666666667px var(--redColor),
+      213px -53.6666666667px var(--redColor), -21px 35.3333333333px var(--redColor),
+      105px -366.6666666667px var(--redColor), -94px 5.3333333333px var(--redColor),
+      163px -306.6666666667px var(--redColor), 45px -238.6666666667px var(--redColor),
+      31px -314.6666666667px var(--redColor), 176px -180.6666666667px var(--redColor),
+      241px -11.6666666667px var(--redColor), 88px -23.6666666667px var(--redColor),
+      -61px -158.6666666667px var(--redColor), -56px 22.3333333333px var(--redColor),
+      -214px -59.6666666667px var(--redColor), 121px -298.6666666667px var(--redColor),
+      123px -206.6666666667px var(--redColor), -247px -284.6666666667px var(--redColor),
+      -90px -310.6666666667px var(--redColor), -116px -299.6666666667px var(--redColor);
+  }
+}
+
+/* blue explorsion effect */
+@keyframes explosion-2-blue {
+  to {
+    box-shadow: 226px -325.6666666667px var(--blueColor),
+      -208px -177.6666666667px var(--blueColor), -113px -220.6666666667px var(--blueColor),
+      -64px -20.6666666667px var(--blueColor), 203px -202.6666666667px var(--blueColor),
+      -12px -161.6666666667px var(--blueColor), 138px -232.6666666667px var(--blueColor),
+      -249px -148.6666666667px var(--blueColor), -42px -286.6666666667px var(--blueColor),
+      -5px -0.6666666667px var(--blueColor), 173px 6.3333333333px var(--blueColor),
+      -44px -165.6666666667px var(--blueColor), -40px 2.3333333333px var(--blueColor),
+      182px -276.6666666667px var(--blueColor), 108px -151.6666666667px var(--blueColor),
+      79px -89.6666666667px var(--blueColor), 122px -241.6666666667px var(--blueColor),
+      211px 38.3333333333px var(--blueColor), -47px -147.6666666667px var(--blueColor),
+      -226px -118.6666666667px var(--blueColor), -37px -373.6666666667px var(--blueColor),
+      204px -118.6666666667px var(--blueColor), 137px -63.6666666667px var(--blueColor),
+      62px -49.6666666667px var(--blueColor), 14px -11.6666666667px var(--blueColor),
+      -222px -170.6666666667px var(--blueColor), -115px -163.6666666667px var(--blueColor),
+      223px -32.6666666667px var(--blueColor), -152px -49.6666666667px var(--blueColor),
+      -192px -88.6666666667px var(--blueColor), -50px -197.6666666667px var(--blueColor),
+      126px -29.6666666667px var(--blueColor), -142px -387.6666666667px var(--blueColor),
+      213px -53.6666666667px var(--blueColor), -21px 35.3333333333px var(--blueColor),
+      105px -366.6666666667px var(--blueColor), -94px 5.3333333333px var(--blueColor),
+      163px -306.6666666667px var(--blueColor), 45px -238.6666666667px var(--blueColor),
+      31px -314.6666666667px var(--blueColor), 176px -180.6666666667px var(--blueColor),
+      241px -11.6666666667px var(--blueColor), 88px -23.6666666667px var(--blueColor),
+      -61px -158.6666666667px var(--blueColor), -56px 22.3333333333px var(--blueColor),
+      -214px -59.6666666667px var(--blueColor), 121px -298.6666666667px var(--blueColor),
+      123px -206.6666666667px var(--blueColor), -247px -284.6666666667px var(--blueColor),
+      -90px -310.6666666667px var(--blueColor), -116px -299.6666666667px var(--blueColor);
+  }
+}
