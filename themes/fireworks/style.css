@@ -23,6 +23,11 @@ body {
   font-size: 0.8rem;
   margin-top: 2rem;
   background: url("images/background.jpg");
+  background-image: image-set(
+    url("images/background.avif") type("image/avif"),
+    url("images/background.webp") type("image/webp"),
+    url("images/background.jpg") type("image/jpeg")
+  );
   background-color: var(--bgColor);
   background-size: cover;
   background-position: center;
