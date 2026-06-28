@@ -1,0 +1,242 @@
+/* Style Settings */
+:root {
+  --bgColor: #000;
+  --fgColor: #fff;
+  --accentColor: rgba(255, 255, 255, 0.8);
+  --font: sans-serif;
+}
+
+html {
+  font-size: 125%;
+  height:100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  background-color: var(--bgColor);
+  color: var(--fgColor);
+  font-family: var(--font);
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  background: url("images/background.jpg");
+  background-color: var(--bgColor);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+#userPhoto {
+  width: 7.5rem;
+  border-radius: 20%;
+  margin: 0;
+}
+
+#userName {
+  color: var(--fgColor);
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+}
+
+#description {
+  margin: 0;
+  text-align: center;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  vertical-align: middle;
+  gap: 1rem;
+  width: 32rem;
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  color: var(--fgColor);
+  font-size: 1.25rem;
+  background-color: rgba(21, 34, 80, 0.8);
+  transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
+  border-radius: 10px;
+}
+
+.link:hover {
+  background-color: var(--accentColor);
+  color: var(--bgColor);
+  border: none;
+}
+
+ion-icon {
+  vertical-align: text-bottom;
+  width: 1.1875em;
+  height: 1.1875em;
+}
+
+
+/* FIREWORKS */
+/* shadows around this box will animate (each comma represents a bubble) */
+#fireworks > div {
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  box-shadow: 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+    0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+    0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+    0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+    0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+    0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+    0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff,
+    0 0 #fff, 0 0 #fff, 0 0 #fff;
+}
+
+/* all individual flare group -> position & size */
+#fireworks div:nth-of-type(1) {
+  width: 4px;
+  height: 4px;
+  left: 50%;
+  top: 50%;
+
+  animation: explosion-2-blue 2s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+
+#fireworks div:nth-of-type(2) {
+  left: 20%;
+  top: 60%;
+  width: 6px;
+  height: 6px;
+
+  animation: 1.5s explosion-2-red ease-in-out infinite;
+  animation-delay: 0.4s;
+}
+
+#fireworks div:nth-of-type(3) {
+  left: 80%;
+  top: 60%;
+  width: 8px;
+  height: 8px;
+
+  animation: 1s explosion-2-blue ease-in-out infinite;
+  animation-delay: 0.6s;
+}
+
+#fireworks div:nth-of-type(4) {
+  left: 90%;
+  top: 25%;
+  width: 4px;
+  height: 4px;
+
+  animation: 1s explosion-2-red ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+#fireworks div:nth-of-type(5) {
+  left: 60%;
+  top: 90%;
+  width: 4px;
+  height: 4px;
+
+  animation: 1s explosion-2-blue ease-in-out infinite;
+  animation-delay: 1.2s;
+}
+
+#fireworks div:nth-of-type(6) {
+  left: 50%;
+  top: 15%;
+  width: 4px;
+  height: 4px;
+
+  animation: 1s explosion-2-red ease-in-out infinite;
+  animation-delay: 1.4s;
+}
+
+#fireworks div:nth-of-type(7) {
+  left: 10%;
+  top: 90%;
+  width: 4px;
+  height: 4px;
+
+  animation: 1s explosion-2-blue ease-in-out infinite;
+  animation-delay: 1.8s;
+}
+
+/* De berekeningen heb ik niet zelf gemaakt die heb ik van: , ondanks dat kan ik je wel alles uitleggen. */
+/* red explosion effect  */
+@keyframes explosion-2-red {
+  to {
+    box-shadow: 226px -325.6666666667px #ea2027,
+      -208px -177.6666666667px #ea2027, -113px -220.6666666667px #ea2027,
+      -64px -20.6666666667px #ea2027, 203px -202.6666666667px #ea2027,
+      -12px -161.6666666667px #ea2027, 138px -232.6666666667px #ea2027,
+      -249px -148.6666666667px #ea2027, -42px -286.6666666667px #ea2027,
+      -5px -0.6666666667px #ea2027, 173px 6.3333333333px #ea2027,
+      -44px -165.6666666667px #ea2027, -40px 2.3333333333px #ea2027,
+      182px -276.6666666667px #ea2027, 108px -151.6666666667px #ea2027,
+      79px -89.6666666667px #ea2027, 122px -241.6666666667px #ea2027,
+      211px 38.3333333333px #ea2027, -47px -147.6666666667px #ea2027,
+      -226px -118.6666666667px #ea2027, -37px -373.6666666667px #ea2027,
+      204px -118.6666666667px #ea2027, 137px -63.6666666667px #ea2027,
+      62px -49.6666666667px #ea2027, 14px -11.6666666667px #ea2027,
+      -222px -170.6666666667px #ea2027, -115px -163.6666666667px #ea2027,
+      223px -32.6666666667px #ea2027, -152px -49.6666666667px #ea2027,
+      -192px -88.6666666667px #ea2027, -50px -197.6666666667px #ea2027,
+      126px -29.6666666667px #ea2027, -142px -387.6666666667px #ea2027,
+      213px -53.6666666667px #ea2027, -21px 35.3333333333px #ea2027,
+      105px -366.6666666667px #ea2027, -94px 5.3333333333px #ea2027,
+      163px -306.6666666667px #ea2027, 45px -238.6666666667px #ea2027,
+      31px -314.6666666667px #ea2027, 176px -180.6666666667px #ea2027,
+      241px -11.6666666667px #ea2027, 88px -23.6666666667px #ea2027,
+      -61px -158.6666666667px #ea2027, -56px 22.3333333333px #ea2027,
+      -214px -59.6666666667px #ea2027, 121px -298.6666666667px #ea2027,
+      123px -206.6666666667px #ea2027, -247px -284.6666666667px #ea2027,
+      -90px -310.6666666667px #ea2027, -116px -299.6666666667px #ea2027;
+  }
+}
+
+/* blue explorsion effect */
+@keyframes explosion-2-blue {
+  to {
+    box-shadow: 226px -325.6666666667px #3742fa,
+      -208px -177.6666666667px #3742fa, -113px -220.6666666667px #3742fa,
+      -64px -20.6666666667px #3742fa, 203px -202.6666666667px #3742fa,
+      -12px -161.6666666667px #3742fa, 138px -232.6666666667px #3742fa,
+      -249px -148.6666666667px #3742fa, -42px -286.6666666667px #3742fa,
+      -5px -0.6666666667px #3742fa, 173px 6.3333333333px #3742fa,
+      -44px -165.6666666667px #3742fa, -40px 2.3333333333px #3742fa,
+      182px -276.6666666667px #3742fa, 108px -151.6666666667px #3742fa,
+      79px -89.6666666667px #3742fa, 122px -241.6666666667px #3742fa,
+      211px 38.3333333333px #3742fa, -47px -147.6666666667px #3742fa,
+      -226px -118.6666666667px #3742fa, -37px -373.6666666667px #3742fa,
+      204px -118.6666666667px #3742fa, 137px -63.6666666667px #3742fa,
+      62px -49.6666666667px #3742fa, 14px -11.6666666667px #3742fa,
+      -222px -170.6666666667px #3742fa, -115px -163.6666666667px #3742fa,
+      223px -32.6666666667px #3742fa, -152px -49.6666666667px #3742fa,
+      -192px -88.6666666667px #3742fa, -50px -197.6666666667px #3742fa,
+      126px -29.6666666667px #3742fa, -142px -387.6666666667px #3742fa,
+      213px -53.6666666667px #3742fa, -21px 35.3333333333px #3742fa,
+      105px -366.6666666667px #3742fa, -94px 5.3333333333px #3742fa,
+      163px -306.6666666667px #3742fa, 45px -238.6666666667px #3742fa,
+      31px -314.6666666667px #3742fa, 176px -180.6666666667px #3742fa,
+      241px -11.6666666667px #3742fa, 88px -23.6666666667px #3742fa,
+      -61px -158.6666666667px #3742fa, -56px 22.3333333333px #3742fa,
+      -214px -59.6666666667px #3742fa, 121px -298.6666666667px #3742fa,
+      123px -206.6666666667px #3742fa, -247px -284.6666666667px #3742fa,
+      -90px -310.6666666667px #3742fa, -116px -299.6666666667px #3742fa;
+  }
+}
