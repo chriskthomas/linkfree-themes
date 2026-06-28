@@ -38,7 +38,7 @@ jq -c '.[]' 'index.json' | while read theme; do
     theme_id="$(echo "$theme" | jq -r '.id')"
 
     # Generate preview of theme
-    curl -s "https://via.placeholder.com/200x200" |
+    curl -s "https://picsum.photos/200" |
         curl -s \
             -F "name=$theme_name" \
             -F "url=#" \
